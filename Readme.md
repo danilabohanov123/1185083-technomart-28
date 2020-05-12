@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Данила Боханов](https://up.htmlacademy.ru/htmlcss/28/user/1185083).
-* Наставник: [Артём Макаров](https://up.htmlacademy.ru/htmlcss/28/user/429879).
+* Наставник: [Артем Макаров](https://up.htmlacademy.ru/htmlcss/28/user/429879).
 
 ---
 
