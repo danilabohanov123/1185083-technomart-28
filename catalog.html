@@ -21,7 +21,7 @@
       <li><a href="#">Мои заказы</a></li>
       <li><a href="#">Личный кабинет</a></li>
     </ul>
-    <nav>
+    <nav aria-label="Cодержание">
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Компания</a></li>
@@ -42,10 +42,25 @@
     <h2>Перфораторы</h2>
     <section>
       <h3>Фильтры</h3>
-      <a href="#">показать</a>
+      <form action="https//:echo.htmlacademy.ru">
+        <h4>Производители</h4>
+        <ul>
+          <li><label><input type="checkbox" name="manufacturer" checked>Bosh</label></li>
+          <li><label><input type="checkbox" name="manufacturer">Интерскол</label></li>
+          <li><label><input type="checkbox" name="manufacturer" checked>Makita</label></li>
+          <li><label><input type="checkbox" name="manufacturer">Dewalt</label></li>
+          <li><label><input type="checkbox" name="manufacturer">Hitachi</label></li>
+        </ul>
+        <h4>Питание</h4>
+        <ul>
+          <li><label><input type="radio" name="power-supply"checked>Аккумуляторные</label></li>
+          <li><label><input type="radio" name="power-supply">Сетевые</label></li>
+        </ul>
+        <button type="sunbit">Показать</button>
+      </form>
     </section>
-    <section>
-      <h3>Товары</h3>
+    <section >
+      <h3 class="visuallyhidden">Товары</h3>
       <ul>
         <li><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
