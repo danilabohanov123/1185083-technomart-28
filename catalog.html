@@ -7,7 +7,10 @@
 <body>
   <header>
     <a href="index.html">Техномарт</a>
-    <a href="#">поиск</a>
+    <form action="https//:echo.htmlacademy.ru" method="get">
+      <label for="search">Поиск:</label>
+      <input type="search" id="search">
+    </form>
     <ul>
       <li><a href="#">закладки</a></li>
       <li><a href="#">корзина</a></li>
@@ -21,7 +24,7 @@
       <li><a href="#">Мои заказы</a></li>
       <li><a href="#">Личный кабинет</a></li>
     </ul>
-    <nav aria-label="Cодержание">
+    <nav>
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Компания</a></li>
@@ -37,26 +40,40 @@
     <ul>
       <li><a href="#">Каталог</a></li>
       <li><a href="#">Инструмент</a></li>
-      <li><a href="#">Перфораторы</a></li>
+      <li><a>Перфораторы</a></li>
     </ul>
     <h2>Перфораторы</h2>
+    <h3>Фильтры</h3>
     <section>
-      <h3>Фильтры</h3>
-      <form action="https//:echo.htmlacademy.ru">
-        <h4>Производители</h4>
-        <ul>
-          <li><label><input type="checkbox" name="manufacturer" checked>Bosh</label></li>
-          <li><label><input type="checkbox" name="manufacturer">Интерскол</label></li>
-          <li><label><input type="checkbox" name="manufacturer" checked>Makita</label></li>
-          <li><label><input type="checkbox" name="manufacturer">Dewalt</label></li>
-          <li><label><input type="checkbox" name="manufacturer">Hitachi</label></li>
-        </ul>
-        <h4>Питание</h4>
-        <ul>
-          <li><label><input type="radio" name="power-supply"checked>Аккумуляторные</label></li>
-          <li><label><input type="radio" name="power-supply">Сетевые</label></li>
-        </ul>
-        <button type="sunbit">Показать</button>
+      <form action="https//:echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Производители</legend>
+
+          <input type="checkbox" id="Bosh" name="manufacturer" value="B" checked>
+          <label for="Bosh">Bosh</label>
+
+          <input type="checkbox" id="Interskol" name="manufacturer" value="I">
+          <label for="Interskol">Интерскол</label>
+
+          <input type="checkbox" id="Makita" name="manufacturer" value="M" checked>
+          <label for="Makita">Makita</label>
+
+          <input type="checkbox" id="Dewalt" name="manufacturer" value="D">
+          <label for="Dewalt">Dewalt</label>
+
+          <input type="checkbox" id="Hitachi" name="manufacturer" value="H">
+          <label for="Hitachi">Hitachi</label>
+        </fieldset>
+        <fieldset>
+          <legend>Питание</legend>
+
+          <input type="radio" id="battery-powered" name="power-supply" value="B" checked>
+          <label for="battery-powered">Аккумуляторные</label>
+
+          <input type="radio" id="networking" name="power-supply" value="N">
+          <label for="networking">Сетевые</label>
+        </fieldset>
+        <button type="sumbit">Показать</button>
       </form>
     </section>
     <section >
