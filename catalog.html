@@ -7,9 +7,10 @@
 <body>
   <header>
     <a href="index.html">Техномарт</a>
-    <form action="https//:echo.htmlacademy.ru" method="get">
+    <form action="https://echo.htmlacademy.ru" method="get">
       <label for="search">Поиск:</label>
-      <input type="search" id="search">
+      <input type="search" name="search" id="search">
+      <button type="submit" class="visually-hidden">Показать</button>
     </form>
     <ul>
       <li><a href="#">закладки</a></li>
@@ -43,41 +44,41 @@
       <li><a>Перфораторы</a></li>
     </ul>
     <h2>Перфораторы</h2>
-    <h3>Фильтры</h3>
     <section>
-      <form action="https//:echo.htmlacademy.ru" method="get">
+      <h3>Фильтры</h3>
+      <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Производители</legend>
 
-          <input type="checkbox" id="Bosh" name="manufacturer" value="B" checked>
-          <label for="Bosh">Bosh</label>
+          <input type="checkbox" id="Bosh" name="manufacturer" value="Bosh" checked>
+          <label for="Bosh">Bosh</label><br>
 
-          <input type="checkbox" id="Interskol" name="manufacturer" value="I">
-          <label for="Interskol">Интерскол</label>
+          <input type="checkbox" id="Interskol" name="manufacturer" value="Interskol">
+          <label for="Interskol">Интерскол</label><br>
 
-          <input type="checkbox" id="Makita" name="manufacturer" value="M" checked>
-          <label for="Makita">Makita</label>
+          <input type="checkbox" id="Makita" name="manufacturer" value="Makita" checked>
+          <label for="Makita">Makita</label><br>
 
-          <input type="checkbox" id="Dewalt" name="manufacturer" value="D">
-          <label for="Dewalt">Dewalt</label>
+          <input type="checkbox" id="Dewalt" name="manufacturer" value="Dewalt">
+          <label for="Dewalt">Dewalt</label><br>
 
-          <input type="checkbox" id="Hitachi" name="manufacturer" value="H">
+          <input type="checkbox" id="Hitachi" name="manufacturer" value="Hitachi">
           <label for="Hitachi">Hitachi</label>
         </fieldset>
         <fieldset>
           <legend>Питание</legend>
 
-          <input type="radio" id="battery-powered" name="power-supply" value="B" checked>
-          <label for="battery-powered">Аккумуляторные</label>
+          <input type="radio" id="battery-powered" name="power-supply" value="battery-powered" checked>
+          <label for="battery-powered">Аккумуляторные</label><br>
 
-          <input type="radio" id="networking" name="power-supply" value="N">
+          <input type="radio" id="networking" name="power-supply" value="networking">
           <label for="networking">Сетевые</label>
         </fieldset>
-        <button type="sumbit">Показать</button>
+        <button type="submit">Показать</button>
       </form>
     </section>
     <section >
-      <h3 class="visuallyhidden">Товары</h3>
+      <h3 class="visually-hidden">Товары</h3>
       <ul>
         <li><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
