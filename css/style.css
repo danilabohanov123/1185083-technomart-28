@@ -51,12 +51,16 @@ img {
   height: auto;
 }
 
-.header-basic li, .nav-catalog li, .filters li, .products li, .footer-basic li, .topics li, .popular-products li, .popular-manufacturers li, .services li, .contacts li, .technomart-company li{
+a{
+  text-decoration: none;
+}
+
+.header-basic ul, .nav-catalog ul, .filters ul, .products ul, .footer-basic ul, .topics ul, .popular-products ul, .popular-manufacturers ul, .services ul, .technomart-company ul{
   list-style: none;
 }
 
-.header-basic a, .nav-catalog a, .filters a, .products a, .footer-basic a, .topics a, .popular-products a, .popular-manufacturers a, .services a, .contacts a, .technomart-company a{
-  text-decoration: none;
+.technomart-company{
+  list-style-image: url("../img/list-style-line.png");
 }
 
 .header-basic {
@@ -162,6 +166,10 @@ img {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.attention:active{
+  background-color: var(--attention-grabbing-active);
 }
 
 .special-link a{
