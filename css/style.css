@@ -12,23 +12,21 @@
 }
 
 :root {
-  --basic-red: #EE3643;
-  --red-dark: #BA2732;
-  --basic-green: #63A63E;
-  --grey-dark: #293449;
-  --grey: #32425C;
-  --basic-grey-light: #C5C5C5;
-  --grey-light: #F1F5F7;
-  --special-grey-light: #F3F7F9;
-  --bacis-black: #000;
-  --white: #FFF;
-  --special-white: #F3F7F9;
-  --basic-beige: #FFD180;
+  --attention-grabbing: #EE3643;
+  --attention-grabbing-active: #BA2732;
+  --place-your-order: #63A63E;
+  --place-your-order-hover: #5FBB2D;
+  --personal-account-and-copyright: #293449;
+  --navigation: #32425C;
+  --special-background: #F1F5F7;ок
+
+  --bacis-font: #000;
+  --basic-background: #FFF;
+  --basic-background-transparent: rgba(255, 255, 255, 0.5);
+  --special-link: #FFD180;
   --old-price: #A9A9A9;
-  --white-transparent: rgba(255, 255, 255, 0.5);
-  --green-light: #5FBB2D;
-  --blue-dark: #161D29;
-  --specail-blue-dark: #1D2739;
+  --link-active: #161D29;
+  --specail-link-active: #1D2739;
 }
 
 
@@ -36,24 +34,16 @@ body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  color: var(--bacis-black);
-  font-family: 'Cuprum', sans-serif;
+  color: var(--bacis-font);
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   line-height: 23px;
   font-style: normal;
   font-weight: normal;
   font-transform: lowercase;
-  background-color: var(--wight);
+  background-color: var(--basic-background);
   background-position: top center
   background-repeat: no-repeat;
-}
-
-header {
-  background-color: var(--special-white);
-}
-
-a {
-  text-decoration: none;
 }
 
 img {
@@ -61,12 +51,21 @@ img {
   height: auto;
 }
 
-li {
+.header-basic li, .nav-catalog li, .filters li, .products li, .footer-basic li, .topics li, .popular-products li, .popular-manufacturers li, .services li, .contacts li, .technomart-company li{
   list-style: none;
 }
 
+.header-basic a, .nav-catalog a, .filters a, .products a, .footer-basic a, .topics a, .popular-products a, .popular-manufacturers a, .services a, .contacts a, .technomart-company a{
+  text-decoration: none;
+}
+
+.header-basic {
+  background-color: var(--special-background);
+}
+
 .logo{
-  background-color: var(--basic-red);
+  display: block;
+  background-color: var(--attention-grabbing);
   width: 165px;
   height: 35px;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
@@ -75,51 +74,46 @@ li {
 }
 
 .logo:active{
-  background-color: var(--red-dark);
+  background-color: var(--attention-grabbing-active);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
 .user-panel {
-  background-color: var(--grey-dark);
-  color: var(--white);
+  background-color: var(--personal-account-and-copyright);
+  color: var(--basic-background);
   font-size: 18px;
   line-height: 24px;
 }
 
-.user-panel a, .navigation a{
-  color: var(--white);
+.user-panel a, .nav-main a{
+  color: var(--basic-background);
 }
 
 .place-your-order{
-  background-color: var(--basic-green);
+  background-color: var(--place-your-order);
   height: 100%;
   width: 150px;
   text-align: center;
 }
 
-h1 {
+.title-main {
   font-style: italic;
-  color: var(--basic-red);
+  color: var(--attention-grabbing);
   font-weight: normal;
   font-size: 16px;
   line-height: 23px;
 }
 
-
-
-.tel a{
-  color: var(--basic-red);
+.tel {
+  color: var(--attention-grabbing)
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-}
-
-.tel {
-  border: 3px solid var(--white);
+  border: 3px solid var(--basic-background);
 }
 
 .adress-header{
-  color: var(--grey);
+  color: var(--navigation);
 }
 
 
@@ -127,28 +121,27 @@ h1 {
   font-size: 21px;
   line-height: 21px;
 }
-.sign-in a, .sign-up a{
-  color: var(---bacis-black);
-  background-color: var(--white);
+
+.sign-in, .sign-up{
+  color: var(--bacis-font);
+  background-color: var(--basic-background);
 }
 
-.navigation {
-  background-color: var(--grey);
+.nav-main {
+  background-color: var(--navigation);
   font-size: 18px;
   line-height: 24px;
 }
 
-
-
- .basic-section p{
-  font-family: 'PT Sans', sans-serif;
+ .technomart-company p{
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
 }
 
-.basic-section h2{
+.technomart-company h2{
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -157,28 +150,26 @@ h1 {
 .company-list li{
   font-size: 18px;
   line-height: 24px;
-  /*-------красные маркеры у списка сделать не получилось-------*/
-  list-style-image: url('img/list-style-line.png');/*------изображение не подключается------*/
-  /*-------красные маркеры у списка сделать не получилось-------*/
-
 }
+
 .company-list a{
-  color: var(--basic-black);
+  color: var(--bacis-font);
 }
 
-.special-link{
-  background-color: var(--basic-red);
+.attention{
+  background-color: var(--attention-grabbing);
+  color: var(--basic-background);
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
 .special-link a{
-  color: var(--white);
+  color: var(--basic-background);
 }
 
-footer{
-  background-color: var(--grey);
+.footer-basic{
+  background-color: var(--navigation);
 }
 
 .nav-footer{
@@ -188,31 +179,31 @@ footer{
 }
 
 .nav-footer-first a{
-  color: var(--grey-light);
+  color: var(--special-background);
 }
 
 .nav-footer-second a, .developers-and-social-networks a{
-  color: var(--basic-beige);
+  color: var(--special-link);
 }
 
 .adress-footer, .adress-footer a{
-  color: var(--special-grey-light);
+  color: var(--special-background);
 }
 
 .developers-and-social-networks{
-  background-color: var(--grey-dark);
-  color: var(--white);
+  background-color: var(--personal-account-and-copyright);
+  color: var(--basic-background);
   font-size: 16px;
   line-height: 18px;
 }
 
 .list-products{
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
 }
 
-.list-products span{
+.old-price{
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
@@ -227,7 +218,7 @@ footer{
 }
 
 .list-keys-sort{
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -236,19 +227,19 @@ footer{
 }
 
 .list-keys-sort a{
-  color: var(--basic-black);
+  color: var(--bacis-font);
 }
 
-.title-topic h2{
+.title-topic{
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  color: var(--grey);
-  background-color: var(--special-white);
+  color: var(--navigation);
+  background-color: var(--special-background);
 }
 
 .filters{
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
@@ -266,7 +257,7 @@ footer{
 }
 
 .button {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
@@ -276,23 +267,23 @@ footer{
 }
 
 .menu-header a:active, .user-panel label:active{
-  color: var(--white-transparent);
-  background-color: var(--blue-dark);
+  color: var(--basic-background-transparent);
+  background-color: var(--link-active);
 }
 
 .place-your-order:hover{
-  background-color: var(--green-light);
+  background-color: var(--place-your-order-hover);
 }
 
 .place-your-order:active{
-  background-color: var(--basic-green);
+  background-color: var(--place-your-order);
 }
 
 .nav-main a:hover, .nav-footer-first a:hover, .nav-footer-second a:hover{
-  background-color: var(--blue-dark);
+  background-color: var(--link-active);
 }
 
 .nav-main a:active, .nav-footer-first a:active, .nav-footer-second a:active{
-  background-color: var(--specail-blue-dark);
-  color: var(--white-transparent);
+  background-color: var(--specail-link-active);
+  color: var(--basic-background-transparent);
 }

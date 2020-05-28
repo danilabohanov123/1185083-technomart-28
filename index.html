@@ -3,18 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
+    <header class="header-basic">
       <div class="user-panel">
-        <a>
-          <div class="logo">
-            <img src="img/logo-main.svg" alt="Логотип" width="108" height="18">
-          </div>
+        <a class="logo">
+          <img src="img/logo-main.svg" alt="Логотип" width="108" height="18">
         </a>
         <form action="https://echo.htmlacademy.ru" method="get">
           <label for="search">Поиск:</label>
@@ -24,35 +21,29 @@
         <ul class="menu-header">
           <li><a href="#">Закладки: 0</a></li>
           <li><a href="#">Корзина: 0</a></li>
-          <li><div class="place-your-order"><a href="#">Оформить заказ</a></div></li>
+          <li><a href="#" class="place-your-order">Оформить заказ</a></li>
         </ul>
       </div>
-      <h1>Интернет-магазин  строительных материалов  и инструментов для ремонта</h1>
-      <div class="tel">
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-      </div>
+      <h1 class="title-main">Интернет-магазин  строительных материалов  и инструментов для ремонта</h1>
+      <a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
       <p class="adress-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <div class="authorization">
+      <ul class="authorization">
+        <li><a class="sign-in" href="">Войти</a></li>
+        <li><a class="sign-up" href="">Регистрация</a></li>
+      </ul>
+      <nav class="nav-main">
         <ul>
-          <li><div class="sign-in"><a href="">Войти</a></div></li>
-          <li><div class="sign-up"><a href="">Регистрация</a></div></li>
+          <li><a>Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
-      </div>
-      <div class="navigation">
-        <nav class="nav-main">
-          <ul>
-            <li><a>Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
+      </nav>
     </header>
     <main>
-      <section>
+      <section class="topics">
         <h2 class="visually-hidden">Темы</h2>
         <ul>
           <li>
@@ -99,36 +90,36 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="popular-products">
         <h2>Популярные товары:</h2>
         <a href="#">Все популярные товары</a>
         <ul class="products-list">
           <li>
             <img src="img/perforator-bosch bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
             <h3>Перфоратор BOSCH BFG 9000</h3>
-            <p><span>32500 P.</span></p>
+            <p class="old-price">32500 P.</p>
             <p>25500 Р.</p>
           </li>
           <li>
             <img src="img/perforator-bosch bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             <h3>Перфоратор BOSCH BFG 3000</h3>
-            <p><span>22500 P.</span></p>
+            <p class="old-price">22500 P.</p>
             <p>15500 Р.</p>
           </li>
           <li>
             <img src="img/perforator-bosch bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             <h3>Перфоратор BOSCH BFG 6000</h3>
-            <p><span>30500 P.</span></p>
+            <p class="old-price">30500 P.</p>
             <p>25500 Р.</p>
           </li>
           <li>
             <img src="img/perforator-bosch bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-            <h3><span>Перфоратор BOSCH BFG 2000</span></h3>
+            <h3>Перфоратор BOSCH BFG 2000</h3>
             <p>12500 P.</p>
           </li>
         </ul>
       </section>
-      <section>
+      <section class="popular-manufacturers">
         <h2>Популярные производители</h2>
         <a href="#">Все производители</a>
         <ul>
@@ -142,7 +133,7 @@
           <li><a><img src="img/logo-metabo.png" width="204" height="69" alt="логотип Metabo"></a></li>
         </ul>
       </section>
-      <section>
+      <section class="services">
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <ul>
@@ -166,37 +157,29 @@
           </li>
         </ul>
       </section>
-      <div class="basic-section">
-        <section>
-          <h2>Компания «Техномарт»</h2>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-          Мы можем доставить ваш товар в самые отдаленные точки России!
-            Техномарт работает со многими транспортными компаниями:</p>
-          <ul class="company-list">
-            <li><a href="#">Деловые линии</a></li>
-            <li><a href="#">Автотрейдинг</a></li>
-            <li><a href="#">ЖелДорЭкспедиция</a></li>
-          </ul>
-          <div class="special-link">
-            <a href="#">Подробнее о компании</a>
-          </div>
-        </section>
-        <section>
-          <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a href="#"><img src="img/route-to-the-office.png" width="300" height="158" alt="маршрут до офиса"></a>
-          <div class="special-link">
-            <a href="#">Заблудились? Напишите нам!</a>
-          </div>
-        </section>
-      </div>
+      <section class="technomart-company">
+        <h2>Компания «Техномарт»</h2>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+        Мы можем доставить ваш товар в самые отдаленные точки России!
+          Техномарт работает со многими транспортными компаниями:</p>
+        <ul class="company-list">
+          <li><a href="#">Деловые линии</a></li>
+          <li><a href="#">Автотрейдинг</a></li>
+          <li><a href="#">ЖелДорЭкспедиция</a></li>
+        </ul>
+        <a class="attention" href="#">Подробнее о компании</a>
+      </section>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+        <a href="#"><img src="img/route-to-the-office.png" width="300" height="158" alt="маршрут до офиса"></a>
+        <a class="attention" href="#">Заблудились? Напишите нам!</a>
+      </section>
     </main>
-    <footer>
+    <footer class="footer-basic">
       <div class="nav-footer">
-        <a>
-          <div class="logo">
-            <img src="img/logo-main.svg" alt="Логотип" width="108" height="18">
-          </div>
+        <a class="logo">
+          <img src="img/logo-main.svg" alt="Логотип" width="108" height="18">
         </a>
         <ul class="nav-footer-first">
           <li><a href="#">Компания</a></li>
