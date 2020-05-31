@@ -60,11 +60,13 @@ a{
 }
 
 .technomart-company{
-  list-style-image: url("../img/list-style-line.png");
+  width: 478px;
+  margin-right: 162px;
 }
 
 .header-basic {
   background-color: var(--special-background);
+  padding-bottom: 60px;
 }
 
 .logo{
@@ -87,6 +89,9 @@ a{
   color: var(--basic-background);
   font-size: 18px;
   line-height: 24px;
+  height: 42px;
+  display: flex;
+  align-items: center;
 }
 
 .user-panel a, .nav-main a{
@@ -95,12 +100,13 @@ a{
 
 .place-your-order{
   background-color: var(--place-your-order);
-  height: 100%;
-  width: 150px;
-  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px
+
 }
 
 .title-main {
+  margin-right: 93px;
   font-style: italic;
   color: var(--attention-grabbing);
   font-weight: normal;
@@ -109,35 +115,66 @@ a{
 }
 
 .tel {
-  color: var(--attention-grabbing)
+
+  color: var(--attention-grabbing);
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
   border: 3px solid var(--basic-background);
+  width: 270px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  text-align: center;
+
 }
 
 .adress-header{
   color: var(--navigation);
+  margin: 0px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 
 .authorization{
+  display: flex;
   font-size: 21px;
   line-height: 21px;
 }
 
 .sign-in, .sign-up{
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-right: 10px;
+  width: 121px;
+  text-align: center;
   color: var(--bacis-font);
   background-color: var(--basic-background);
 }
 
-.nav-main {
+.nav-main{
   background-color: var(--navigation);
   font-size: 18px;
   line-height: 24px;
+  height: 60px;
+  width: 940px;
 }
 
- .technomart-company p{
+.list-nav-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.nav-main li{
+  padding-top: 16px;
+  padding-bottom: 20px;
+}
+
+
+ .technomart-company p, .contacts p{
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -145,7 +182,7 @@ a{
   line-height: 24px;
 }
 
-.technomart-company h2{
+.technomart-company h2, .contacts h2{
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -160,12 +197,34 @@ a{
   color: var(--bacis-font);
 }
 
+.list-products{
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  height: 990px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
 .attention{
+  display: block;
   background-color: var(--attention-grabbing);
   color: var(--basic-background);
   font-size: 14px;
   line-height: 18px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  text-align: center;
   text-transform: uppercase;
+}
+
+.more-about-company{
+  width: 220px;
+}
+
+.write-to-us{
+  width: 300px;
+  margin-top: 20px;
 }
 
 .attention:active{
@@ -181,13 +240,33 @@ a{
 }
 
 .nav-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   font-size: 18px;
   line-height: 24px;
-  margin: 0;
+  width: 942px;
 }
 
 .nav-footer-first a{
   color: var(--special-background);
+}
+
+.nav-footer-first li, .nav-footer-second li{
+  margin-left: 58px;
+}
+
+.nav-footer-second::nth-child(1){
+  margin-left: 0px;
+}
+
+.nav-footer p{
+  margin-right: 0px;
+}
+
+.nav-footer-first, .nav-footer-second{
+  display: flex;
+  flex-direction: row;
 }
 
 .nav-footer-second a, .developers-and-social-networks a{
@@ -198,7 +277,15 @@ a{
   color: var(--special-background);
 }
 
+.feedback{
+  margin-left: 413px;
+  margin-right: 51px;
+}
+
 .developers-and-social-networks{
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: flex;
   background-color: var(--personal-account-and-copyright);
   color: var(--basic-background);
   font-size: 16px;
@@ -244,6 +331,10 @@ a{
   text-transform: uppercase;
   color: var(--navigation);
   background-color: var(--special-background);
+  width: 940px;
+  padding-left: 29px;
+  padding-top: 29px;
+  padding-bottom: 30px;
 }
 
 .filters{
@@ -278,6 +369,19 @@ a{
   color: var(--basic-background-transparent);
   background-color: var(--link-active);
 }
+.menu-header{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.menu-header a{
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
 
 .place-your-order:hover{
   background-color: var(--place-your-order-hover);
@@ -287,11 +391,51 @@ a{
   background-color: var(--place-your-order);
 }
 
-.nav-main a:hover, .nav-footer-first a:hover, .nav-footer-second a:hover{
+.nav-main li:hover{
   background-color: var(--link-active);
 }
 
-.nav-main a:active, .nav-footer-first a:active, .nav-footer-second a:active{
+.nav-main li:active{
   background-color: var(--specail-link-active);
   color: var(--basic-background-transparent);
+}
+
+.nav-footer-first a:hover, .nav-footer-second a:hover{
+  text-decoration: underline;
+}
+
+.nav-footer-first a:active, .nav-footer-second a:active{
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.search{
+  margin-left: 19px;
+}
+
+.header-group{
+  display: flex;
+  margin-top: 37px;
+  margin-bottom: 44px;
+  align-items: flex-end;
+}
+
+.tel-adress{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 69px;
+
+}
+
+.filters-products{
+  display: flex;
+  flex-direction: row;
+}
+
+.technomart-company-contacts{
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
