@@ -92,14 +92,14 @@ a {
 
 .background-header{
   background-color: var(--personal-account-and-copyright);
-  min-height: 42px;
+  height: 42px;
 }
 
 .user-panel {
   color: var(--basic-background);
   font-size: 18px;
   line-height: 24px;
-  min-height: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
 }
