@@ -1,3 +1,21 @@
+:root {
+  --attention-grabbing: #EE3643;
+  --attention-grabbing-active: #BA2732;
+  --place-your-order: #63A63E;
+  --place-your-order-hover: #5FBB2D;
+  --personal-account-and-copyright: #293449;
+  --navigation: #32425C;
+  --special-background: #F1F5F7;
+
+  --bacis-font: #000;
+  --basic-background: #FFF;
+  --basic-background-transparent: rgba(255, 255, 255, 0.5);
+  --special-link: #FFD180;
+  --old-price: #A9A9A9;
+  --link-active: #161D29;
+  --specail-link-active: #1D2739;
+}
+
 .visually-hidden {
   position: absolute;
 
@@ -11,65 +29,53 @@
   overflow: hidden;
 }
 
-:root {
-  --attention-grabbing: #EE3643;
-  --attention-grabbing-active: #BA2732;
-  --place-your-order: #63A63E;
-  --place-your-order-hover: #5FBB2D;
-  --personal-account-and-copyright: #293449;
-  --navigation: #32425C;
-  --special-background: #F1F5F7;ок
-
-  --bacis-font: #000;
-  --basic-background: #FFF;
-  --basic-background-transparent: rgba(255, 255, 255, 0.5);
-  --special-link: #FFD180;
-  --old-price: #A9A9A9;
-  --link-active: #161D29;
-  --specail-link-active: #1D2739;
-}
-
-
 body {
+
   min-width: 960px;
   margin: 0;
   padding: 0;
   color: var(--bacis-font);
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", "sans-serif";
   font-size: 16px;
   line-height: 23px;
   font-style: normal;
   font-weight: normal;
-  font-transform: lowercase;
   background-color: var(--basic-background);
-  background-position: top center
+  background-position: top center;
   background-repeat: no-repeat;
 }
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 
 img {
   max-width: 100%;
   height: auto;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.header-basic ul, .nav-catalog ul, .filters ul, .products ul, .footer-basic ul, .topics ul, .popular-products ul, .popular-manufacturers ul, .services ul, .technomart-company ul{
+.header ul, .nav-catalog ul, .filters ul, .products ul, .footer ul, .topics ul, .popular-products ul, .popular-manufacturers ul, .services ul, .technomart-company ul {
   list-style: none;
 }
 
-.technomart-company{
+.technomart-company {
   width: 478px;
   margin-right: 162px;
 }
 
-.header-basic {
+.header {
   background-color: var(--special-background);
   padding-bottom: 60px;
 }
 
-.logo{
+.logo {
   display: block;
   background-color: var(--attention-grabbing);
   width: 165px;
@@ -79,17 +85,21 @@ a{
   padding-left: 55px;
 }
 
-.logo:active{
+.logo:active {
   background-color: var(--attention-grabbing-active);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
-.user-panel {
+.background-header{
   background-color: var(--personal-account-and-copyright);
+  min-height: 42px;
+}
+
+.user-panel {
   color: var(--basic-background);
   font-size: 18px;
   line-height: 24px;
-  height: 42px;
+  min-height: 100%;
   display: flex;
   align-items: center;
 }
@@ -98,7 +108,7 @@ a{
   color: var(--basic-background);
 }
 
-.place-your-order{
+.place-your-order {
   background-color: var(--place-your-order);
   padding-left: 16px;
   padding-right: 16px
@@ -115,7 +125,6 @@ a{
 }
 
 .tel {
-
   color: var(--attention-grabbing);
   font-weight: bold;
   font-size: 21px;
@@ -125,10 +134,9 @@ a{
   padding-top: 7px;
   padding-bottom: 8px;
   text-align: center;
-
 }
 
-.adress-header{
+.adress-header {
   color: var(--navigation);
   margin: 0px;
   font-size: 14px;
@@ -136,13 +144,13 @@ a{
 }
 
 
-.authorization{
+.authorization {
   display: flex;
   font-size: 21px;
   line-height: 21px;
 }
 
-.sign-in, .sign-up{
+.sign-in, .sign-up {
   display: block;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -153,60 +161,64 @@ a{
   background-color: var(--basic-background);
 }
 
-.nav-main{
+.nav-main {
   background-color: var(--navigation);
   font-size: 18px;
   line-height: 24px;
-  height: 60px;
+  min-height: 60px;
+  box-sizing: border-box;
   width: 940px;
+  padding-left: 52px;
+  padding-right: 47px;
 }
 
-.list-nav-main{
+.list-nav-main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
+  padding: 0px;
+  margin: 0px;
 }
 
-.nav-main li{
+.nav-main li {
   padding-top: 16px;
   padding-bottom: 20px;
 }
 
 
- .technomart-company p, .contacts p{
-  font-family: "PT Sans", "Arial", sans-serif;
+ .technomart-company p, .contacts p {
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
 }
 
-.technomart-company h2, .contacts h2{
+.technomart-company h2, .contacts h2 {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.company-list li{
+.company-list li {
   font-size: 18px;
   line-height: 24px;
 }
 
-.company-list a{
+.company-list a {
   color: var(--bacis-font);
 }
 
-.list-products{
+.list-products {
   display: flex;
   flex-wrap: wrap;
   width: 700px;
-  height: 990px;
+  min-height: 990px;
   justify-content: space-between;
   align-content: space-between;
 }
 
-.attention{
+.attention {
   display: block;
   background-color: var(--attention-grabbing);
   color: var(--basic-background);
@@ -218,28 +230,28 @@ a{
   text-transform: uppercase;
 }
 
-.more-about-company{
+.more-about-company {
   width: 220px;
 }
 
-.write-to-us{
+.write-to-us {
   width: 300px;
   margin-top: 20px;
 }
 
-.attention:active{
+.attention:active {
   background-color: var(--attention-grabbing-active);
 }
 
-.special-link a{
+.special-link a {
   color: var(--basic-background);
 }
 
-.footer-basic{
+.footer {
   background-color: var(--navigation);
 }
 
-.nav-footer{
+.nav-footer  {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -248,23 +260,23 @@ a{
   width: 942px;
 }
 
-.nav-footer-first a{
+.nav-footer-first a {
   color: var(--special-background);
 }
 
-.nav-footer-first li, .nav-footer-second li{
+.nav-footer-first li, .nav-footer-second li {
   margin-left: 58px;
 }
 
-.nav-footer-second::nth-child(1){
+.nav-footer-second::nth-child(1) {
   margin-left: 0px;
 }
 
-.nav-footer p{
+.nav-footer p {
   margin-right: 0px;
 }
 
-.nav-footer-first, .nav-footer-second{
+.nav-footer-first, .nav-footer-second {
   display: flex;
   flex-direction: row;
 }
@@ -273,32 +285,40 @@ a{
   color: var(--special-link);
 }
 
-.adress-footer, .adress-footer a{
+.adress-footer, .adress-footer a {
   color: var(--special-background);
 }
 
-.feedback{
+.feedback {
   margin-left: 413px;
   margin-right: 51px;
 }
 
-.developers-and-social-networks{
+.background-footer {
+  background-color: var(--personal-account-and-copyright);
+}
+
+.developers-and-social-networks {
   padding-top: 35px;
   padding-bottom: 35px;
   display: flex;
-  background-color: var(--personal-account-and-copyright);
   color: var(--basic-background);
   font-size: 16px;
   line-height: 18px;
 }
 
-.list-products{
-  font-family: "PT Sans", "Arial", sans-serif;
+.developers-and-social-networks p{
+  margin-top: 0px;
+  margin-bottom:0px;
+}
+
+.list-products {
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-style: normal;
   font-weight: bold;
 }
 
-.old-price{
+.old-price {
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
@@ -306,14 +326,14 @@ a{
   color: var(--old-price);
 }
 
-.list-products h3{
+.list-products h3 {
   font-size: 18px;
   line-height: 20px;
   text-align: center;
 }
 
-.list-keys-sort{
-  font-family: "PT Sans", "Arial", sans-serif;
+.list-keys-sort {
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -321,42 +341,43 @@ a{
   text-transform: uppercase;
 }
 
-.list-keys-sort a{
+.list-keys-sort a {
   color: var(--bacis-font);
 }
 
-.title-topic{
+.title-topic {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--navigation);
   background-color: var(--special-background);
+  box-sizing: border-box;
   width: 940px;
   padding-left: 29px;
   padding-top: 29px;
   padding-bottom: 30px;
 }
 
-.filters{
-  font-family: "PT Sans", "Arial", sans-serif;
+.filters {
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
 }
 
-.filters label{
+.filters label {
   font-size: 15px;
   line-height: 19px;
 }
 
-.filters legend{
+.filters legend {
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
 }
 
 .button {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
@@ -365,17 +386,19 @@ a{
   text-align: center;
 }
 
-.menu-header a:active, .user-panel label:active{
+.menu-header a:active, .user-panel label:active {
   color: var(--basic-background-transparent);
   background-color: var(--link-active);
 }
-.menu-header{
+
+.menu-header {
+  margin: 0px;
   display: flex;
   height: 100%;
   align-items: center;
 }
 
-.menu-header a{
+.menu-header a {
   display: block;
   padding-top: 9px;
   padding-bottom: 9px;
@@ -383,44 +406,44 @@ a{
   padding-right: 26px;
 }
 
-.place-your-order:hover{
+.place-your-order:hover {
   background-color: var(--place-your-order-hover);
 }
 
-.place-your-order:active{
+.place-your-order:active {
   background-color: var(--place-your-order);
 }
 
-.nav-main li:hover{
+.nav-main li:hover {
   background-color: var(--link-active);
 }
 
-.nav-main li:active{
+.nav-main li:active {
   background-color: var(--specail-link-active);
   color: var(--basic-background-transparent);
 }
 
-.nav-footer-first a:hover, .nav-footer-second a:hover{
+.nav-footer-first a:hover, .nav-footer-second a:hover {
   text-decoration: underline;
 }
 
-.nav-footer-first a:active, .nav-footer-second a:active{
+.nav-footer-first a:active, .nav-footer-second a:active {
   opacity: 0.5;
   text-decoration: none;
 }
 
-.search{
+.search {
   margin-left: 19px;
 }
 
-.header-group{
+.header-group {
   display: flex;
   margin-top: 37px;
   margin-bottom: 44px;
   align-items: flex-end;
 }
 
-.tel-adress{
+.tel-adress {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -428,14 +451,15 @@ a{
 
 }
 
-.filters-products{
+.filters-products {
   display: flex;
   flex-direction: row;
 }
 
-.technomart-company-contacts{
+.technomart-company-contacts {
+  margin: 0px;
   display: flex;
   flex-direction: row;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
