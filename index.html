@@ -10,41 +10,57 @@
   <body>
     <header class="header">
       <div class="background-header">
-        <div class="user-panel container">
+        <div class="container user-panel">
           <a class="logo">
             <img src="img/logo-main.svg" alt="Логотип" width="108" height="18">
           </a>
           <form class="search" action="https://echo.htmlacademy.ru" method="get">
-            <label for="search">Поиск:</label>
+            <div class="search-label">
+              <img src="img/icon-search.svg" alt="Поиск" width="17px" height="17px">
+              <label for="search">Поиск:</label>
+            </div>
             <input type="search" name="search" id="search">
             <button type="submit" class="visually-hidden">Показать</button>
           </form>
           <ul class="menu-header">
-            <li><a href="#">Закладки: 0</a></li>
-            <li><a href="#">Корзина: 0</a></li>
-            <li><a href="#" class="place-your-order">Оформить заказ</a></li>
+            <li class="bookmarks">
+              <img src="img/icon-bookmark.svg" alt="Закладки" width="14" height="16">
+              <a href="#">Закладки: 0</a>
+            </li>
+            <li class="cart">
+              <img src="img/icon-cart.svg" alt="Закладки" width="15" height="15">
+              <a href="#">Корзина: 0</a>
+            </li>
+            <li class="place-your-order"><a href="#">Оформить заказ</a></li>
           </ul>
         </div>
       </div>
-      <div class="header-group container">
-        <h1 class="title-main">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</h1>
+      <div class="container header-group">
+        <h1 class="title-main">Интернет-магазин строительных материалов <br>и инструментов для ремонта</h1>
         <div class="tel-adress">
-          <a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <div class="tel">
+            <img src="img/icon-phone.svg" alt="Телефон" width="19" height="19">
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </div>
           <p class="adress-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <ul class="authorization">
-          <li><a class="sign-in" href="">Войти</a></li>
+          <li class="sign-in">
+            <img src="img/icon-login.svg" alt="Вход" width="20" height="17">
+            <a href="">Войти</a>
+          </li>
           <li><a class="sign-up" href="">Регистрация</a></li>
         </ul>
       </div>
-      <nav class="nav-main container">
+      <nav class="container nav-main">
         <ul class="list-nav-main">
-          <li><a>Главная</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="nav-main-li"><a>Главная</a></li>
+          <li class="nav-main-li"><a>Компания</a></li>
+          <li class="nav-main-li"><a href="catalog.html">Каталог</a></li>
+          <li class="nav-main-li"><a href="#">Новости</a></li>
+          <li class="nav-main-li"><a href="#">Спецпредложения</a></li>
+          <li class="nav-main-li"><a href="#">Доставка</a></li>
+          <li class="nav-main-li"><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -104,24 +120,24 @@
             <img src="img/perforator-bosch bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
             <h3>Перфоратор BOSCH BFG 9000</h3>
             <p class="old-price">32500 P.</p>
-            <p>25500 Р.</p>
+            <p class="price">25500 Р.</p>
           </li>
           <li class="product">
             <img src="img/perforator-bosch bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             <h3>Перфоратор BOSCH BFG 3000</h3>
             <p class="old-price">22500 P.</p>
-            <p>15500 Р.</p>
+            <p class="price">15500 Р.</p>
           </li>
           <li class="product">
             <img src="img/perforator-bosch bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             <h3>Перфоратор BOSCH BFG 6000</h3>
             <p class="old-price">30500 P.</p>
-            <p>25500 Р.</p>
+            <p class="price">25500 Р.</p>
           </li>
           <li class="product">
             <img src="img/perforator-bosch bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             <h3>Перфоратор BOSCH BFG 2000</h3>
-            <p>12500 P.</p>
+            <p class="price">12500 P.</p>
           </li>
         </ul>
       </section>
@@ -185,7 +201,7 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="nav-footer container">
+      <div class="container nav-footer">
         <a class="logo">
           <img src="img/logo-main.svg" alt="Логотип" width="108" height="18">
         </a>
@@ -196,7 +212,7 @@
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <p class="adress-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+        <p class="adress-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
         <ul class="nav-footer-second">
           <li><a href="#">Материалы</a></li>
           <li><a href="#">Техника</a></li>
@@ -205,10 +221,15 @@
         </ul>
       </div>
       <div class="background-footer">
-        <div class="developers-and-social-networks container">
-          <p>© 2010–2019 Компания «Техномарт» <br> Все права защищены</p>
-          <p class="feedback">Обратная связь: <br> <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-          <p>Разработано — <br> <a href="htmlacademy.ru">htmlacademy.</a></p>
+        <div class="container developers-and-social-networks">
+          <p class="copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
+          <ul class="social-networks">
+            <li><img src="img/icon-vk.svg" alt="Вконтакте" width="44" height="44"></li>
+            <li><img src="img/icon-fb.svg" alt="Фейсбук" width="44" height="44"></li>
+            <li><img src="img/icon-insta.svg" alt="Инстаграм" width="44" height="44"></li>
+          </ul>
+          <p class="feedback">Обратная связь:<br> <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          <p>Разработано —<br> <a href="htmlacademy.ru">htmlacademy.</a></p>
         </div>
       </div>
     </footer>
