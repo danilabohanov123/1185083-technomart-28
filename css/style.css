@@ -62,7 +62,7 @@ a {
   text-decoration: none;
 }
 
-.header ul, .nav-catalog ul, .filters ul, .products ul, .footer ul, .topics ul, .popular-products ul, .popular-manufacturers ul, .services ul, .technomart-company ul {
+.header ul, .nav-catalog, .filters ul, .products ul, .footer ul, .topics ul, .popular-products ul, .popular-manufacturers ul, .services ul, .technomart-company ul {
   list-style: none;
 }
 
@@ -654,9 +654,6 @@ a {
   text-align: center;
 }
 
-.price-label{
-
-}
 .price {
 
   width: 141px;
@@ -668,5 +665,37 @@ a {
   background-color: var(--attention-grabbing);
   margin:  auto auto;
   margin-bottom: 21px;
+}
 
+.background-main-1{
+  background-color: var(--basic-background);
+}
+
+.background-main-2{
+  background-color: var(--special-background);
+}
+
+.about-perforators p{
+  margin: 0px;
+}
+
+.about-perforators{
+  font-family: "PT Sans", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  box-sizing: border-box;
+  padding-top: 64px;
+  padding-left: 0px;
+  padding-bottom: 68px;
+}
+
+.about-perforators h3{
+  margin: 0px;
+  margin-bottom: 25px;
+  font-family: "Cuprum", "Arial", "sans-serif";
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
