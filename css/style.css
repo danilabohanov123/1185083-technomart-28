@@ -6,7 +6,7 @@
   --personal-account-and-copyright: #293449;
   --navigation: #32425C;
   --special-background: #F1F5F7;
-
+  --title-background: #F9F5F0;
   --bacis-font: #000;
   --basic-background: #FFF;
   --basic-background-transparent: rgba(255, 255, 255, 0.5);
@@ -645,16 +645,19 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 220px;
   min-height: 318px;
 }
 
 
-.product h4, .product p{
+.product h4, .product h3, .product p{
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.price {
+.product .price {
 
   width: 141px;
   min-height: 38px;
@@ -663,15 +666,17 @@ a {
   padding-bottom: 10px;
   color: var(--basic-background);
   background-color: var(--attention-grabbing);
-  margin:  auto auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
   margin-bottom: 21px;
 }
 
-.background-main-1{
+.background-catalog-1{
   background-color: var(--basic-background);
 }
 
-.background-main-2{
+.background-catalog-2{
   background-color: var(--special-background);
 }
 
@@ -679,7 +684,7 @@ a {
   margin: 0px;
 }
 
-.about-perforators{
+.about-perforators {
   font-family: "PT Sans", "Arial", "sans-serif";
   font-style: normal;
   font-weight: normal;
@@ -691,11 +696,86 @@ a {
   padding-bottom: 68px;
 }
 
-.about-perforators h3{
+.about-perforators h3 {
   margin: 0px;
   margin-bottom: 25px;
   font-family: "Cuprum", "Arial", "sans-serif";
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.background-index-1 {
+  background-color: var(--basic-background);
+}
+
+.background-index-2 {
+  background-color: var(--special-background);
+}
+
+.background-index-3 {
+  background-color: var(--basic-background);
+}
+
+.title-popular{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--title-background);
+  align-items: center;
+  min-height: 89px;
+  box-sizing: border-box;
+  padding-left: 28px;
+  padding-right: 19px;
+  justify-content: space-between;
+
+}
+
+.title-popular a{
+  display: block;
+  background-color: var(--attention-grabbing);
+  color: var(--basic-background);
+  margin: 0;
+  padding: 0;
+  min-width: 192px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.title-popular h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0px;
+  color: var(--navigation);
+}
+
+.manufacturers-list li {
+  margin: 0px;
+  width: 220px;
+  height: 145px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.manufacturers-list{
+  margin: 0px;
+  padding: 0px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 220px 220px 220px 220px;
+  grid-template-rows: 145px 145px;
+  grid-gap: 20px;
+}
+
+.list-popular-products{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  padding: 0px;
 }
