@@ -659,7 +659,7 @@ a {
 
 .product .price {
 
-  width: 141px;
+  width: 122px;
   min-height: 38px;
   box-sizing: border-box;
   padding-top: 10px;
@@ -772,10 +772,27 @@ a {
   grid-gap: 20px;
 }
 
-.list-popular-products{
+.list-popular-products {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 70px;
   padding: 0px;
+}
+
+.services h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 25px;
+}
+
+.services p {
+  margin: 0;
+}
+
+
+.services {
+  padding-top: 64px;
 }
