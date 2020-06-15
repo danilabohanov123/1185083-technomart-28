@@ -206,9 +206,28 @@ a {
 }
 
 .company-list li {
+  position: relative;
   font-size: 18px;
   line-height: 24px;
+  padding-left: 37px;
 }
+
+.navigation-map {
+  display: block;
+  height: 158px;
+}
+
+.company-list li::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--attention-grabbing);
+}
+
 
 .company-list a {
   color: var(--bacis-font);
@@ -551,6 +570,17 @@ a {
   flex-direction: row;
   padding-top: 70px;
   padding-bottom: 70px;
+}
+
+.contacts {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.contacts h2 {
+  margin: 0;
 }
 
 .bookmarks {
