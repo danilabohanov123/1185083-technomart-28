@@ -11,8 +11,8 @@
     <header class="header">
       <div class="background-header">
         <div class="container user-panel">
-          <a class="logo">
-            <img src="img/logo-main.svg" alt="Логотип" width="108" height="18">
+          <a class="logo-header">
+            <img src="img/logo-header.svg" alt="Логотип" width="108" height="18">
           </a>
           <form class="search" action="https://echo.htmlacademy.ru" method="get">
             <label class="visually-hidden" for="search">Поиск</label>
@@ -60,48 +60,42 @@
     <main>
       <section class="container topics">
         <h2 class="visually-hidden">Темы</h2>
-        <ul>
-          <li>
-            <a href="#">
-              <h3>Материалы</h3>
-              <p>На любой вкус</p>
-            </a>
+        <ul class= "topics-list">
+          <li class="topic-item new materials">
+            <h3>Материалы</h3>
+            <a href="#">На любой вкус</a>
           </li>
-          <li>
-            <a href="#">
-              <h3>Инструмент</h3>
-              <p>На все случаи</p>
-            </a>
+          <li class="topic-item instrument">
+            <h3>Инструмент</h3>
+            <a href="#">На все случаи</a>
           </li>
-          <li>
-            <a href="#">
-              <h3>Техника</h3>
-              <p>Для стройки</p>
-            </a>
+          <li class="topic-item technic">
+            <h3>Техника</h3>
+            <a href="#">Для стройки</a>
           </li>
-          <li>
-            <a href="#">
-              <h3>Скидки 50%</h3>
-              <p>На 350 товаров</p>
-            </a>
+          <li class="topic-item discount">
+            <h3>Скидки 50%</h3>
+            <a href="#">На 350 товаров</a>
           </li>
-          <li>
-            <a href="#">
-              <h3>Доставка</h3>
-              <p>Бесплатно</p>
-            </a>
+          <li class="topic-item topic-delivery">
+            <h3>Доставка</h3>
+            <a href="#">Бесплатно</a>
           </li>
-        </ul>
-        <ul>
-          <li>
-            <h3>Перфораторы</h3>
-            <p>Настоящие мужские игрушки</p>
-            <a href="#">Открыть каталог</a>
-          </li>
-          <li>
-            <h3>Дрели</h3>
-            <p>Соседям на радость!</p>
-            <a href="#">Открыть каталог</a>
+          <li class="topics-slider">
+            <ul>
+              <li class="topics-slide slide-perforators topics-slide-current">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+                <a href="#">Открыть каталог</a>
+              </li>
+              <li class="topics-slide slide-drills slide">
+                <h3>Дрели</h3>
+                <p>Соседям на радость!</p>
+                <a href="#">Открыть каталог</a>
+              </li>
+            </ul>
+            <button class="control-left" aria-label="левый переключатель слайдов"></button>
+            <button class="control-right" aria-label="правый переключатель слайдов"></button>
           </li>
         </ul>
       </section>
@@ -117,7 +111,7 @@
             <p class="old-price">32500 P.</p>
             <p class="price">25500 Р.</p>
           </li>
-          <li class="product product-new">
+          <li class="product new">
             <img class="bosch-bfg-3000" src="img/perforator-bosch bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH  BFG 3000">
             <h3>Перфоратор BOSCH BFG 3000</h3>
             <p class="old-price">22500 P.</p>
@@ -203,8 +197,8 @@
     </main>
     <footer class="footer">
       <div class="container nav-footer">
-        <a class="logo">
-          <img src="img/logo-main.svg" alt="Логотип" width="108" height="18">
+        <a class="logo-footer">
+          <img src="img/logo-footer.svg" alt="Логотип" width="137" height="22">
         </a>
         <ul class="nav-footer-first">
           <li><a href="#">Компания</a></li>
