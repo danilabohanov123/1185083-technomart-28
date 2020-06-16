@@ -1019,7 +1019,7 @@ a {
   width: 100%;
 }
 
-.services-current {
+.services-control {
   font-family: "Cuprum", "Arial", "sans-serif";
   font-style: normal;
   font-weight: bold;
@@ -1107,7 +1107,7 @@ a {
   background-color: var(--attention-grabbing-active);
 }
 
-.services-current-control {
+.services-control-current {
   background-color: var(--basic-background);
   color: var(--navigation);
   border: none;
@@ -1355,3 +1355,10 @@ a {
   background-repeat: none;
 }
 
+.services-slider-controls button:hover, .services-slider-controls button:focus {
+    background-color: var(--personal-account-and-copyright);
+}
+
+.services-slider-controls  .services-control-current:hover, .services-slider-controls  .services-control-current:active {
+  background-color: var(--basic-background);
+}
