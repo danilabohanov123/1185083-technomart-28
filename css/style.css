@@ -25,6 +25,12 @@
   --topic-discount: #8ED78F;
   --topic-delivery: #FFC047;
   --background-transparent: rgba(255, 255, 255, 0.3);
+  --price-item: #F7F3EC;
+  --price-item-scale: #D7DCDE;
+  --price-item-bar: #00ca74;
+  --price-item-toggle: #ABABAB;
+  --toggle-shadow: #cfcfcf;
+  --price-item-line: #444444;
 }
 
 .visually-hidden {
@@ -244,6 +250,9 @@ a {
 }
 
 .list-products {
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
   font-family: "PT Sans", "Arial", "sans-serif";
   font-style: normal;
   font-weight: bold;
@@ -428,6 +437,7 @@ a {
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
+  width: 220px;
 }
 
 .filters label {
@@ -583,6 +593,7 @@ a {
 .filters-products {
   display: flex;
   flex-direction: row;
+  padding-top: 20px;
 }
 
 .technomart-company-contacts {
@@ -1361,4 +1372,108 @@ a {
 
 .services-slider-controls  .services-control-current:hover, .services-slider-controls  .services-control-current:active {
   background-color: var(--basic-background);
+}
+
+.price-item, .manufacturers-item, .power-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.price-item legend {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.range-controls {
+  position: relative;
+  background-color: var(--price-item);
+  border-radius: 5px;
+  margin-bottom: 9px;
+  padding: 39px 20px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: var(--price-item-scale);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 100%;
+  background-color: var(--price-item-bar);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-background);
+  border-radius: 50%;
+  background-color: var(--price-item-toggle);
+  box-shadow: 0 2px 1px 0 var(--toggle-shadow);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 11px;;
+}
+
+.range-controls .toggle-max {
+  left: 135px;
+}
+
+.filters h3 {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  font-family: "PT Sans", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: var(--price-item);
+}
+
+.price-controls {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 1px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 60%;
+  background-color: var(--price-item-line);
+}
+
+.price-controls input {
+  font-family: "PT Sans", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--price-item);
+  width: 95px;
+  padding: 9px 0px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.manufacturers-item label {
+  font-size: 15px;
+  line-height: 19px;
 }

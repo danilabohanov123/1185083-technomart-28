@@ -68,7 +68,23 @@
         <section class="filters">
           <h3>Фильтры</h3>
           <form action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
+            <fieldset class="price-item">
+              <legend>Цена:</legend>
+              <div class="filter-range">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
+                <div class="price-controls">
+                  <input aria-label="минимальная цена" type="number" name="min-price" value="0">
+                  <input aria-label="максимальная цена" type="number" name="min-price" value="30000">
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="manufacturers-item">
               <legend>Производители</legend>
               <ul>
                 <li>
@@ -93,7 +109,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="power-item">
               <legend>Питание</legend>
               <ul>
                 <li>
