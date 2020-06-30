@@ -855,38 +855,44 @@ a {
   padding-bottom: 9px;
 }
 
-.sign-in {
-  width: 121px;
-  min-height: 45px;
+.authorization li {
+  padding: 0;
   margin: 0;
 }
 
-.sign-up {
+.authorization .sign-in {
+  box-sizing: border-box;
+  width: 121px;
+  min-height: 45px;
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 11px;
+}
+
+.authorization .sign-up {
+  box-sizing: border-box;
   width: 150px;
   min-height: 45px;
   margin: 0;
   margin-left: 10px;
+  padding-top: 13px;
+  padding-bottom: 11px;
 }
 
-.sign-in a, .sign-up a {
+.authorization .sign-in, .authorization .sign-up, .personal-account .profile {
   display: block;
   font-size: 21px;
   line-height: 21px;
   background-color: var(--basic-background);
   color: var(--bacis-font);
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  padding-top: 13px;
-  padding-bottom: 11px;
 }
 
-.sign-in a {
+.authorization .sign-in {
   position: relative;
   padding-left: 45px;
 }
 
-.sign-in a::after {
+.authorization .sign-in::after {
   position: absolute;
   content: "";
   width: 20px;
@@ -900,27 +906,23 @@ a {
   cursor: pointer;
 }
 
-.sign-up a {
+.authorization .sign-up {
   text-align: center;
 }
 
-.sign-in a:hover, .sign-in a:focus, .sign-up a:hover, .sign-up a:focus {
+.authorization .sign-in:hover, .authorization .sign-in:focus, .authorization .sign-up:hover, .authorization .sign-up:focus {
   color: var(--attention-grabbing);
 }
 
-.sign-in a:active, .sign-up a:active {
+.authorization .sign-in:active, .authorization .sign-up:active, .personal-account .profile:active {
   color: var(--old-price);
 }
 
-.sign-up a:active {
-  color: var(--old-price);
-}
-
-.sign-in a:hover::after {
+.authorization .sign-in:hover::after {
   background-image: url(../img/icon-login-active.svg);
 }
 
-.sign-in a:active::after {
+.authorization .sign-in:active::after {
   background-image: url(../img/icon-login.svg);
 }
 
@@ -2111,7 +2113,6 @@ a {
 }
 
 .modal-login {
-  display: block;
   background-color: var(--special-background);
   color: var(--navigation);
   top: 120px;
@@ -2139,7 +2140,8 @@ a {
 }
 
 
-.login-checkbox:hover, .login-checkbox:focus {
+.login-checkbox:hover, .login-checkbox:focus, .restore:hover, .restore:focus {
+  background-color: inherit;
   color: var(--attention-grabbing);
 }
 
@@ -2168,7 +2170,108 @@ a {
   background-repeat: no-repeat;
 }
 
+input:checked + .login-checkbox::before {
+  background-image: url(../img/checkbox-on.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+input:checked + .login-checkbox:hover::before, input:checked + .login-checkbox:focus::before {
+  background-image: url(../img/checkbox-on-hover.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
 .index-main label, .catalog-main label, .modal label {
   cursor: pointer;
 }
 
+.login-form input[type="email"], .login-form input[type="password"] {
+  box-sizing: border-box;
+  width: 300px;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  font: inherit;
+  color: var(--basic-black);
+  background-color: inherit;
+  border: 2px solid var(--navigation);
+}
+
+.login-help label {
+  margin-right: 20px;
+}
+
+.submit-login-form {
+  font-size: 18px;
+  width: 100%;
+  background-color: var(--attention-grabbing);
+  color: var(--basic-background);
+  padding: 12px 0;
+  border: none;
+  border-radius: 3px;
+}
+
+.submit-login-form:hover, .submit-login-form:focus {
+  background-color: var(--attention-grabbing-active);
+}
+
+.personal-account {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  width: 299px;
+}
+
+.personal-account .profile {
+  position: relative;
+  box-sizing: border-box;
+  width: 299px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding-top: 12px;
+  padding-right: 57px;
+  padding-bottom: 12px;
+  padding-left: 56px;
+}
+
+.personal-account .profile::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 18px;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(../img/icon-user.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.personal-account .profile::after {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 17px;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(../img/icon-logout.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.personal-account .profile:hover::before, .personal-account .profile:focus::before {
+  background-image: url(../img/icon-user-hover.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.personal-account .profile:hover::after, .personal-account .profile:focus::after {
+  background-image: url(../img/icon-logout-hover.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}

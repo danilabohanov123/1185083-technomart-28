@@ -37,12 +37,8 @@
           <p class="adress-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <ul class="authorization">
-          <li class="sign-in">
-            <a href="">Войти</a>
-          </li>
-          <li class="sign-up">
-            <a href="">Регистрация</a>
-          </li>
+          <li><a class="sign-in" href="">Войти</a></li>
+          <li><a class="sign-up" href="">Регистрация</a></li>
         </ul>
       </div>
       <nav class="container nav-main">
@@ -294,5 +290,27 @@
         </div>
       </div>
     </footer>
+    <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p class="modal-description">Введите, пожалуйста, свой логин и пароль</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="login-login">Логин</label>
+          <input id="login-login" type="email" name="login" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="visually-hidden" for="login-password">Пароль</label>
+          <input id="login-password" type="password" name="password" placeholder="••••••••">
+        </p>
+        <p class="login-help">
+          <input id="login-checkbox" class="visually-hidden" type="checkbox" name="remember">
+          <label for="login-checkbox" class="login-checkbox">Запомните меня.</label>
+          <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="submit-login-form" type="submit">Войти</button>
+      </form>
+      <button class="modal-close modal-close-login" type="button" aria-label="Закрыть"></button>
+    </section>
+    <script src="js/modal-login.js"></script>
   </body>
 </html>

@@ -36,13 +36,14 @@
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p class="adress-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-        <ul class="authorization">
-          <li class="sign-in">
-            <a href="">Войти</a>
-          </li>
-          <li class="sign-up">
-            <a href="">Регистрация</a>
-          </li>
+        <ul class="authorization visually-hidden">
+          <li><a class="sign-in" href="">Войти</a></li>
+          <li><a class="sign-up" href="">Регистрация</a></li>
+        </ul>
+        <ul class="personal-account">
+          <li><a class="profile" href="#">Неизвестно</a></li>
+          <li><a href="#">Мои заказы</a></li>
+          <li><a href="#">Личный кабинет</a></li>
         </ul>
       </div>
       <nav class="container nav-main">
@@ -264,21 +265,22 @@
           <input id="login-password" type="password" name="password" placeholder="••••••••">
         </p>
         <p class="login-help">
-          <input class="visually-hidden" type="checkbox" name="remember">
-          <label class="login-checkbox">Запомните меня</label>
+          <input id="login-checkbox" class="visually-hidden" type="checkbox" name="remember">
+          <label for="login-checkbox" class="login-checkbox">Запомните меня.</label>
           <a class="restore" href="#">Я забыл пароль!</a>
         </p>
-        <button class="button" type="submit">Войти</button>
+        <button class="submit-login-form" type="submit">Войти</button>
       </form>
-      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      <button class="modal-close modal-close-login" type="button" aria-label="Закрыть"></button>
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="766" height="560" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
-      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      <button class="modal-close modal-close-map" type="button" aria-label="Закрыть"></button>
     </section>
+    <script src="js/modal-login.js"></script>
     <script src="js/topics-slider.js"></script>
     <script src="js/services-slider.js"></script>
-    <script src="js/modal-map.js"></script>
+    <!--<script src="js/modal-map.js"></script>-->
   </body>
 </html>
