@@ -17,7 +17,7 @@
           <form class="search" action="https://echo.htmlacademy.ru" method="get">
             <label class="visually-hidden" for="search">Поиск</label>
             <input placeholder="Поиск:" type="search" name="search" id="search">
-            <button type="submit" class="visually-hidden">Показать</button>
+            <button aria-label="Показать" type="submit" class="visually-hidden"></button>
           </form>
           <ul class="menu-header">
             <li class="bookmarks">
@@ -106,7 +106,9 @@
         </div>
         <ul class="list-popular-products">
           <li class="product"  tabindex="0">
-            <img class="bosch-bfg-9000" src="img/perforator-bosch bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH  BFG 9000">
+            <div class="product-image">
+              <img src="img/perforator-bosch bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH  BFG 9000">
+            </div>
             <h3>Перфоратор BOSCH<br> BFG 9000</h3>
             <p class="old-price">32500 P.</p>
             <p class="price">25500 Р.</p>
@@ -116,7 +118,9 @@
             </div>
           </li>
           <li class="product new"  tabindex="0">
-            <img class="bosch-bfg-3000" src="img/perforator-bosch bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH  BFG 3000">
+            <div class="product-image">
+              <img src="img/perforator-bosch bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH  BFG 3000">
+            </div>
             <h3>Перфоратор BOSCH<br> BFG 3000</h3>
             <p class="old-price">22500 P.</p>
             <p class="price">15500 Р.</p>
@@ -126,7 +130,9 @@
             </div>
           </li>
           <li class="product"  tabindex="0">
-            <img class="bosch-bfg-6000" src="img/perforator-bosch bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH  BFG 6000">
+            <div class="product-image">
+              <img src="img/perforator-bosch bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH  BFG 6000">
+            </div>
             <h3>Перфоратор BOSCH<br> BFG 6000</h3>
             <p class="old-price">30500 P.</p>
             <p class="price">25500 Р.</p>
@@ -136,7 +142,9 @@
             </div>
           </li>
           <li class="product new"  tabindex="0">
-            <img class="bosch-bfg-2000" src="img/perforator-bosch bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+            <div class="product-image">
+              <img src="img/perforator-bosch bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+            </div>
             <h3>Перфоратор BOSCH<br> BFG 2000</h3>
             <p class="price">12500 P.</p>
             <div class="cart-group">
@@ -168,9 +176,9 @@
           <p class="description-services">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services-slider">
             <ul class="services-slider-controls">
-              <li><button type="button" class="services-control services-control-current">Доставка</button></li>
-              <li><button type="button" class="services-control">Гарантия</button></li>
-              <li><button type="button" class="services-control">Кредит</button></li>
+              <li><button type="button" class="services-control delivery-control services-control-current">Доставка</button></li>
+              <li><button type="button" class="services-control guarantee-control">Гарантия</button></li>
+              <li><button type="button" class="services-control credit-control">Кредит</button></li>
             </ul>
             <ul class="services-list-sliders">
               <li class="services-slide delivery slide-current">
@@ -205,7 +213,7 @@
         <section class="contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-          <a class="navigation-map" href="#"><img src="img/route-to-the-office.png" width="300" height="158" alt="маршрут до офиса"></a>
+          <a class="navigation-map" href="#"><img src="img/route-to-the-office.png" width="300" height="158" alt="Офис компании по адрессу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
           <a class="attention write-to-us" href="#">Заблудились? Напишите нам!</a>
         </section>
       </div>
@@ -243,5 +251,34 @@
         </div>
       </div>
     </footer>
+    <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p class="modal-description">Введите, пожалуйста, свой логин и пароль</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="login-login">Логин</label>
+          <input id="login-login" type="email" name="login" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="visually-hidden" for="login-password">Пароль</label>
+          <input id="login-password" type="password" name="password" placeholder="••••••••">
+        </p>
+        <p class="login-help">
+          <input class="visually-hidden" type="checkbox" name="remember">
+          <label class="login-checkbox">Запомните меня</label>
+          <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="766" height="560" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
+    <script src="js/topics-slider.js"></script>
+    <script src="js/services-slider.js"></script>
+    <script src="js/modal-map.js"></script>
   </body>
 </html>
