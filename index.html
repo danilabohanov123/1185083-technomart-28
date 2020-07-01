@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize-minimized.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -28,16 +28,16 @@
       </div>
       <div class="container header-group">
         <h1 class="title-main">Интернет-магазин строительных материалов <br>и инструментов для ремонта</h1>
-        <div class="tel-adress">
+        <div class="tel-address">
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <p class="adress-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="address-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <ul class="authorization">
           <li><a class="sign-in" href="">Войти</a></li>
           <li><a class="sign-up" href="">Регистрация</a></li>
         </ul>
         <ul class="personal-account">
-          <li><a class="profile" href="#">Неизвестно</a></li>
+          <li><a class="profile" href="#">Равшан Джамшутович</a></li>
           <li><a class="my-orders" href="#">Мои заказы</a></li>
           <li><a class="profile-page" href="#">Личный кабинет</a></li>
         </ul>
@@ -70,22 +70,6 @@
             <h3>Техника</h3>
             <a href="#">Для стройки</a>
           </li>
-          <li class="topics-slider">
-            <ul>
-              <li class="topics-slide slide-perforators topics-slide-current">
-                <h3>Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
-                <a href="#">Открыть каталог</a>
-              </li>
-              <li class="topics-slide slide-drills slide">
-                <h3>Дрели</h3>
-                <p>Соседям на радость!</p>
-                <a href="#">Открыть каталог</a>
-              </li>
-            </ul>
-            <button class="control-left" aria-label="левый переключатель слайдов"></button>
-            <button class="control-right" aria-label="правый переключатель слайдов"></button>
-          </li>
           <li class="topic-item discount">
             <h3>Скидки 50%</h3>
             <a href="#">На 350 товаров</a>
@@ -95,6 +79,24 @@
             <a href="#">Бесплатно</a>
           </li>
         </ul>
+        <div class="topics-slider">
+          <ul class="topics-slider-list">
+            <li class="topics-slide slide-perforators topics-slide-current">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+              <a href="#">Открыть каталог</a>
+            </li>
+            <li class="topics-slide slide-drills slide">
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+              <a href="#">Открыть каталог</a>
+            </li>
+          </ul>
+          <ul class="topics-slider-controls">
+            <li><button class="control-left" aria-label="левый переключатель слайдов"></button></li>
+            <li><button class="control-right" aria-label="правый переключатель слайдов"></button></li>
+          </ul>
+        </div>
       </section>
       <section class="container popular-products">
         <div class="title-popular">
@@ -109,10 +111,10 @@
             <h3>Перфоратор BOSCH BFG 9000</h3>
             <p class="old-price">32500 P.</p>
             <p class="price">25500 Р.</p>
-            <div class="cart-group">
-              <button class="add-to-cart">Купить</button>
-              <button class="add-to-bookmarks">В закладки</button>
-            </div>
+            <ul class="cart-group">
+              <li><button class="add-to-cart">Купить</button></li>
+              <li><button class="add-to-bookmarks">В закладки</button></li>
+            </ul>
           </li>
           <li class="product new"  tabindex="0">
             <div class="product-image">
@@ -121,10 +123,10 @@
             <h3>Перфоратор BOSCH BFG 3000</h3>
             <p class="old-price">22500 P.</p>
             <p class="price">15500 Р.</p>
-            <div class="cart-group">
-              <button class="add-to-cart">Купить</button>
-              <button class="add-to-bookmarks">В закладки</button>
-            </div>
+            <ul class="cart-group">
+              <li><button class="add-to-cart">Купить</button></li>
+              <li><button class="add-to-bookmarks">В закладки</button></li>
+            </ul>
           </li>
           <li class="product"  tabindex="0">
             <div class="product-image">
@@ -133,10 +135,10 @@
             <h3>Перфоратор BOSCH BFG 6000</h3>
             <p class="old-price">30500 P.</p>
             <p class="price">25500 Р.</p>
-            <div class="cart-group">
-              <button class="add-to-cart">Купить</button>
-              <button class="add-to-bookmarks">В закладки</button>
-            </div>
+            <ul class="cart-group">
+              <li><button class="add-to-cart">Купить</button></li>
+              <li><button class="add-to-bookmarks">В закладки</button></li>
+            </ul>
           </li>
           <li class="product new"  tabindex="0">
             <div class="product-image">
@@ -144,10 +146,10 @@
             </div>
             <h3>Перфоратор BOSCH BFG 2000</h3>
             <p class="price">12500 P.</p>
-            <div class="cart-group">
-              <button class="add-to-cart">Купить</button>
-              <button class="add-to-bookmarks">В закладки</button>
-            </div>
+            <ul class="cart-group">
+              <li><button class="add-to-cart">Купить</button></li>
+              <li><button class="add-to-bookmarks">В закладки</button></li>
+            </ul>
           </li>
         </ul>
       </section>
@@ -227,7 +229,7 @@
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <p class="adress-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+        <p class="address-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
         <ul class="nav-footer-second">
           <li><a href="#">Материалы</a></li>
           <li><a href="#">Техника</a></li>
