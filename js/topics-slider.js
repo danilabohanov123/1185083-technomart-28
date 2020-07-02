@@ -3,16 +3,18 @@ let slide_drills = document.querySelector('.slide-drills');
 let control_left = document.querySelector('.control-left');
 let control_right = document.querySelector('.control-right');
 
-control_left.onclick = function() {
+control_left.addEventListener("click", function (evt) {
+  evt.preventDefault();
   slide_perforators.classList.toggle('slide');
   slide_perforators.classList.toggle('topics-slide-current');
   slide_drills.classList.toggle('slide');
   slide_drills.classList.toggle('topics-slide-current');
-};
+});
 
-control_right.onclick = function() {
+control_right.addEventListener("click", function (evt) {
+  evt.preventDefault();
   slide_perforators.classList.toggle('slide');
   slide_perforators.classList.toggle('topics-slide-current');
   slide_drills.classList.toggle('slide');
   slide_drills.classList.toggle('topics-slide-current');
-};
+});

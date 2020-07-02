@@ -39,6 +39,7 @@
   --product-shadow: rgba(0, 0, 0, 0.15);
   --modal-shadow: rgba(0, 0, 0, 0.7);
   --transparent: transparent;
+  --modal-write-us: #F4F4F4;
 }
 
 .search-input::-webkit-input-placeholder {
@@ -73,6 +74,37 @@
   color: var(--basic-font);
 }
 
+.write-us-form input::-webkit-input-placeholder {
+  color: var(--old-price);
+}
+
+.write-us-form input::-moz-placeholder {
+  color: var(--old-price);
+}
+
+.write-us-form input:-moz-placeholder {
+  color: var(--old-price);
+}
+
+.write-us-form input:-ms-input-placeholder {
+  color: var(--old-price);
+}
+
+.write-us-form textarea::-webkit-input-placeholder {
+  color: var(--old-price);
+}
+
+.write-us-form textarea::-moz-placeholder {
+  color: var(--old-price);
+}
+
+.write-us-form textarea:-moz-placeholder {
+  color: var(--old-price);
+}
+
+.write-us-form textarea:-ms-input-placeholder {
+  color: var(--old-price);
+}
 body {
   min-width: 960px;
   margin: 0;
@@ -359,7 +391,7 @@ a {
   width: 220px;
 }
 
-.write-to-us {
+.write-us-link {
   width: 300px;
   margin-top: 25px;
 }
@@ -1097,7 +1129,7 @@ a {
 
 .title-popular a:hover, .title-popular a:focus,
 .topics-slide a:active, .more-about-company:hover,
-.more-about-company:focus, .write-to-us:hover, .write-to-us:focus {
+.more-about-company:focus, .write-us-link:hover, .write-us-link:focus {
   background-color: var(--attention-grabbing-active);
   box-shadow: none;
 }
@@ -2101,17 +2133,18 @@ a {
   left: 0;
   display: none;
   margin: auto;
-  background-color: var(--title-background);
+  background-color: var(--basic-background);
   color: var(--basic-font);
-  box-shadow: 0 30px 50px var(--modal-shadow);
+  border-top: 7px solid var(--attention-grabbing);
+  box-shadow: 0 4px 20px var(--product-shadow);
 }
 
 .modal-close {
   position: absolute;
-  top: 0;
-  right: -34px;
-  width: 22px;
-  height: 22px;
+  top: 17px;
+  right: 10px;
+  width: 21px;
+  height: 21px;
   background-color: var(--transparent);
   border: 0;
 }
@@ -2119,10 +2152,10 @@ a {
 .modal-close::before, .modal-close::after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 2px;
-  width: 19px;
-  height: 3px;
+  top: 5px;
+  right: -2px;
+  width: 27px;
+  height: 4px;
   background-color: var(--attention-grabbing);
   cursor: pointer;
 }
@@ -2136,9 +2169,8 @@ a {
 }
 
 .modal-map {
-  width: 766px;
-  height: 560px;
-  border: 7px solid var(--basic-background);
+  width: 943px;
+  height: 442px;
 }
 
 .modal-map img {
@@ -2153,111 +2185,119 @@ a {
   display: block;
 }
 
-.modal-login {
-  background-color: var(--special-background);
-  color: var(--navigation);
-  top: 120px;
+.modal-write-us {
+  width: 620px;
+  background-color: var(--basic-background);
+  color: var(--basic-font);
+  top: 50px;
   bottom: auto;
-  width: 300px;
-  padding: 50px 80px;
+  padding: 0;
 }
 
-.modal-login h2 {
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 30px;
-  font-weight: normal;
-  line-height: 42px;
-}
-
-.modal-description {
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-.login-form p {
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-
-.login-checkbox:hover, .login-checkbox:focus,
-.restore:hover, .restore:focus {
+.write-us-form {
   background-color: inherit;
-  color: var(--attention-grabbing);
-}
-
-.login-checkbox {
-  position: relative;
-  padding-left: 35px;
-}
-
-.login-checkbox::before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  width: 26px;
-  height: 23px;
-  background-image: url(../img/checkbox-off.svg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-
-}
-
-.login-checkbox:hover::before, .login-checkbox:active::before {
-  background-image: url(../img/checkbox-off-hover.svg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-input:checked + .login-checkbox::before {
-  background-image: url(../img/checkbox-on.svg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-input:checked + .login-checkbox:hover::before,
-input:checked + .login-checkbox:focus::before {
-  background-image: url(../img/checkbox-on-hover.svg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
 }
 
 .index-main label, .catalog-main label, .modal label {
   cursor: pointer;
 }
 
-.login-form input[type="email"],
-.login-form input[type="password"] {
-  box-sizing: border-box;
-  width: 300px;
-  padding-top: 10px;
-  padding-right: 40px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  font: inherit;
-  color: var(--basic-black);
+.wrapper-form-field {
   background-color: inherit;
-  border: 2px solid var(--navigation);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 37px 80px;
+  padding-top: 39px;
 }
 
-.login-help label {
-  margin-right: 20px;
+.write-us-form p {
+  padding: 0;
+  margin: 0;
 }
 
-.submit-login-form {
+.write-us-form .login-name, .write-us-form .login-email {
+  width: 220px;
+  margin-bottom: 13px;
+}
+
+.message-text {
+  width: 100%;
+}
+
+.write-us-form input, .write-us-form textarea {
+  font-family: "PT Sans", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  background-color: inherit;
+  color: var(--old-price);
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  padding-left: 10px;
+  border: 2px solid var(--controls-border-hover);
+  border-radius: 2px;
+  margin-top: 11px;
+}
+
+.write-us-form textarea {
+  display: block;
+  margin-bottom: 0;
+  padding-top: 4px;
+  padding-bottom: 10px;
+}
+
+.login-name input, .login-email input {
+  height: 38px;
+}
+
+.write-us-form textarea {
+  resize: none;
+}
+
+.write-us-form label {
+  font-family: "Cuprum", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: normal;
   font-size: 18px;
+  line-height: 24px;
+  color: inherit;
+  padding-left: 1px;
+}
+
+.write-us-form label:hover, .write-us-form label:focus {
+  color: var(--attention-grabbing);
+}
+
+.write-us-form label:active {
+  color: var(--old-price);
+}
+
+.wrapper-sumbit-button {
+  background-color: var(--modal-write-us);
+  padding: 37px 80px;
+}
+
+.submit-write-us-form {
+  font-family: "Cuprum", "Arial", "sans-serif";
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
   width: 100%;
   background-color: var(--attention-grabbing);
   color: var(--basic-background);
-  padding: 12px 0;
+  padding: 10px 0;
   border: none;
-  border-radius: 3px;
 }
 
-.submit-login-form:hover, .submit-login-form:focus {
+.submit-write-us-form:hover, .submit-write-us-form:focus {
   background-color: var(--attention-grabbing-active);
 }
 
