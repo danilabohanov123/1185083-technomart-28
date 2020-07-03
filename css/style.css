@@ -43,6 +43,10 @@
   --modal-write-us: #F4F4F4;
 }
 
+::-moz-placeholder {
+  opacity: 1;
+}
+
 .search-input::-webkit-input-placeholder {
   color: var(--basic-background);
 }
