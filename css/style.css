@@ -38,6 +38,7 @@
   --add-to-cart-active: #518534;
   --product-shadow: rgba(0, 0, 0, 0.15);
   --modal-shadow: rgba(0, 0, 0, 0.7);
+  --logo-shadow: rgba(0, 0, 0, 0.24);
   --transparent: transparent;
   --modal-write-us: #F4F4F4;
 }
@@ -168,32 +169,15 @@ a {
   padding-bottom: 60px;
 }
 
-.logo-header {
-  display: block;
-  background-color: var(--attention-grabbing);
-  box-sizing: border-box;
-  width: 220px;
-  height: 52px;
-  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
-  padding-top: 16px;
-  padding-left: 55px;
-}
-
-.logo-header:active, .logo-footer:active {
-  background-color: var(--attention-grabbing-active);
-  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
-}
-
 .background-header {
   background-color: var(--personal-account-and-copyright);
-  height: 42px;
 }
 
 .user-panel {
   color: var(--basic-background);
   font-size: 18px;
   line-height: 24px;
-  height: 100%;
+  min-height: 42px;
   display: flex;
   align-items: center;
 }
@@ -264,6 +248,69 @@ a {
   padding-bottom: 14px;
   padding-left: 29px;
   padding-right: 29px;
+}
+
+.logo-header img {
+  content: url(../img/logo-header.svg);
+  width: 108px;
+  height: 18px;
+}
+
+.logo-header {
+  position: relative;
+  display: block;
+  background-color: var(--attention-grabbing);
+  box-sizing: border-box;
+  width: 220px;
+  height: 42px;
+  padding: 0;
+  margin: 0;
+  padding-top: 12px;
+  padding-left: 55px;
+}
+
+.logo-footer img {
+  content: url(../img/logo-footer.svg);
+  width: 142px;
+  height: 23px;
+}
+
+.logo-header::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5px;
+  left: 0;
+  bottom: -5px;
+  background-color: var(--attention-grabbing);
+  box-shadow: inset 0 -5px 0 var(--logo-shadow);
+}
+
+.logo-footer {
+  display: block;
+  background-color: var(--attention-grabbing);
+  box-sizing: border-box;
+  width: 220px;
+  height: 68px;
+  box-shadow: inset 0 -5px 0 var(--logo-shadow);
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 39px;
+}
+
+.logo-header:hover, .logo-footer:hover,
+.logo-header:hover::after, .logo-header:focus,
+.logo-footer:focus, .logo-header:focus::after {
+  background-color: var(--attention-link-hover);
+}
+
+.logo-header::after:hover, .logo-header::after:focus {
+  background-color: var(--attention-link-hover);
+}
+
+.logo-header:active, .logo-footer:active {
+  background-color: var(--attention-grabbing-active);
 }
 
 .technomart-company p, .contacts p {
@@ -362,17 +409,6 @@ a {
   grid-template-columns: 220px 220px 220px;
   grid-template-rows: auto auto auto;
   grid-gap: 18px 20px;
-}
-
-.logo-footer {
-  display: block;
-  background-color: var(--attention-grabbing);
-  box-sizing: border-box;
-  width: 220px;
-  height: 68px;
-  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
-  padding-top: 20px;
-  padding-left: 41px;
 }
 
 .attention {
@@ -1605,7 +1641,7 @@ a {
   height: 40px;
   left: 24px;
   bottom: 104px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--transparent);
   border: none;
   background-image: url(../img/icon-left.svg);
   background-position: 0 0;
@@ -1619,7 +1655,7 @@ a {
   height: 40px;
   right: 20px;
   bottom: 104px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--transparent);
   border: none;
   background-image: url(../img/icon-right.svg);
   background-position: 0 0;
