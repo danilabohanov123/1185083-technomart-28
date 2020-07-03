@@ -80,6 +80,10 @@
           </li>
         </ul>
         <div class="topics-slider">
+          <ul class="topics-slider-controls">
+            <li><button class="control-left" aria-label="левый переключатель слайдов"></button></li>
+            <li><button class="control-right" aria-label="правый переключатель слайдов"></button></li>
+          </ul>
           <ul class="topics-slider-list">
             <li class="topics-slide slide-perforators topics-slide-current">
               <h3>Перфораторы</h3>
@@ -91,10 +95,6 @@
               <p>Соседям на радость!</p>
               <a href="#">Открыть каталог</a>
             </li>
-          </ul>
-          <ul class="topics-slider-controls">
-            <li><button class="control-left" aria-label="левый переключатель слайдов"></button></li>
-            <li><button class="control-right" aria-label="правый переключатель слайдов"></button></li>
           </ul>
         </div>
       </section>
@@ -212,8 +212,8 @@
         <section class="contacts">
           <h2>Контакты</h2>
           <p class="pickup">Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a class="navigation-map" href="#"><img src="img/road-to-the-office.png" width="300" height="158" alt="Офис компании по адрессу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
-          <a class="attention write-us-link" href="#">Заблудились? Напишите нам!</a>
+          <a class="navigation-map" href="img/static-map.png"><img src="img/road-to-the-office.png" width="300" height="158" alt="Офис компании по адрессу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
+          <a class="attention write-us-link" href="reserve-write-us.html">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </main>
@@ -256,15 +256,15 @@
         <div class="wrapper-form-field">
           <p class="login-name">
             <label for="login-name">Ваше имя</label>
-            <input id="login-name" type="text" name="login-name" placeholder="Имя Фамилия">
+            <input class="login-name-field" id="login-name" type="text" name="login-name" placeholder="Имя Фамилия">
           </p>
           <p class="login-email">
             <label for="login-email">Ваш e-mail:</label>
-            <input id="login-email" type="email" name="login-email" placeholder="email@example.com">
+            <input class="login-email-field" id="login-email" type="email" name="login-email" placeholder="email@example.com">
           </p>
           <p class="message-text">
             <label for="message-text">Текст письма:</label>
-            <textarea id="message-text" name="message-text" rows="4" placeholder="В свободной форме"></textarea>
+            <textarea class="message-text-field" id="message-text" name="message-text" rows="4" placeholder="В свободной форме"></textarea>
           </p>
         </div>
         <div class="wrapper-sumbit-button">
