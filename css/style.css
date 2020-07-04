@@ -254,29 +254,26 @@ a {
   padding-right: 29px;
 }
 
-.logo-header img {
-  content: url(../img/logo-header.svg);
-  width: 108px;
-  height: 18px;
-}
-
 .logo-header {
   position: relative;
   display: block;
   background-color: var(--attention-grabbing);
-  box-sizing: border-box;
   width: 220px;
   height: 42px;
   padding: 0;
   margin: 0;
-  padding-top: 12px;
-  padding-left: 55px;
 }
 
-.logo-footer img {
-  content: url(../img/logo-footer.svg);
-  width: 142px;
-  height: 23px;
+.logo-header::before {
+  position: absolute;
+  content: "";
+  width: 108px;
+  height: 18px;
+  left: 55px;
+  top: 12px;
+  background-image: url(../img/logo-header.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .logo-header::after {
@@ -291,16 +288,26 @@ a {
 }
 
 .logo-footer {
+  position: relative;
   display: block;
-  background-color: var(--attention-grabbing);
-  box-sizing: border-box;
   width: 220px;
   height: 68px;
+  background-color: var(--attention-grabbing);
   box-shadow: inset 0 -5px 0 var(--logo-shadow);
   padding: 0;
   margin: 0;
-  padding-top: 20px;
-  padding-left: 39px;
+}
+
+.logo-footer::before {
+  position: absolute;
+  content: "";
+  width: 142px;
+  height: 23px;
+  left: 41px;
+  top: 20px;
+  background-image: url(../img/logo-footer.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .logo-header:hover, .logo-footer:hover,
