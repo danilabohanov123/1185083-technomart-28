@@ -21,7 +21,7 @@
           </form>
           <ul class="menu-header">
             <li><a class="bookmarks" href="#">Закладки: 0</a></li>
-            <li><a class="cart cart-login" href="#">Корзина: 10</a></li>
+            <li><a class="cart" href="#">Корзина: 0</a></li>
             <li><a class="place-your-order" href="#">Оформить заказ</a></li>
           </ul>
         </div>
@@ -296,8 +296,15 @@
         </div>
       </div>
     </footer>
-    <section class="modal-added-to-cart">
-
+    <section class="modal modal-added-to-cart">
+      <h2 class="visually-hidden">Сообщение о добавлении товара в корзину</h2>
+      <p class="added-to-cart-message">Товар добавлен в корзину!</p>
+      <div class="wrapper-message-items">
+        <a href="#" class="place-your-order-link">Оформить заказ</a>
+        <button class="close-message" type="button">Продолжить покупки</button>
+      </div>
+      <button aria-label="Закрыть" class="modal-close modal-close-message" type="button"></button>
     </section>
+    <script src="js/modal-added-to-cart.js"></script>
   </body>
 </html>

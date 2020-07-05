@@ -2305,7 +2305,7 @@ a {
   width: 620px;
   background-color: var(--basic-background);
   color: var(--basic-font);
-  top: 50px;
+  top: 120px;
   bottom: auto;
   padding: 0;
 }
@@ -2573,4 +2573,88 @@ a {
 .catalog-group:hover, .catalog-group:focus {
   background-color: inherit;
   color: var(--attention-grabbing);
+}
+
+.modal-added-to-cart {
+  top: 120px;
+  bottom: auto;
+  width: 620px;
+  padding: 0;
+}
+
+.added-to-cart-message {
+  position: relative;
+  font-family: "Cuprum", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 67px 175px;
+  margin: 0;
+}
+
+.added-to-cart-message::before {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  left: 81px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(../img/icon-mark.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.wrapper-message-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--modal-write-us);
+  padding-top: 37px;
+  padding-right: 112px;
+  padding-bottom: 37px;
+  padding-left: 114px;
+}
+
+.wrapper-message-items a, .wrapper-message-items button {
+  display: block;
+  font-family: "Cuprum", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 192px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  border: none;
+}
+
+.place-your-order-link {
+  background-color: var(--attention-grabbing);
+  color: var(--basic-background);
+}
+
+.place-your-order-link:hover,
+.place-your-order-link:focus {
+  background-color: var(--attention-link-hover);
+}
+
+.place-your-order-link:active {
+  background-color: var(--attention-grabbing-active);
+}
+
+.close-message {
+  background-color: var(--basic-background);
+}
+
+.close-message:hover,
+.close-message:focus {
+  color: var(--attention-grabbing);
+}
+
+.close-message:active {
+  color: var(--controls-border-hover);
 }
