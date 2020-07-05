@@ -8,9 +8,88 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <section class="reserve-write-us">
+    <header class="header">
+      <div class="background-header">
+        <div class="container user-panel">
+          <a href="index.html" class="logo-header">
+            <img class="visually-hidden" src="img/logo-header-basic.svg" alt="Техномарт" width="220" height="47">
+          </a>
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <input placeholder="Поиск:" class="search-input" type="search" name="search" id="search">
+            <label aria-label="Поиск" class="search-label" for="search"></label>
+            <button aria-label="Показать" type="submit" class="visually-hidden"></button>
+          </form>
+          <ul class="menu-header">
+            <li><a class="bookmarks" href="#">Закладки: 0</a></li>
+            <li><a class="cart" href="#">Корзина: 0</a></li>
+            <li><a class="place-your-order" href="#">Оформить заказ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container header-group">
+        <h1 class="title-main">Интернет-магазин строительных материалов <br>и инструментов для ремонта</h1>
+        <div class="tel-address">
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p class="address-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+        <ul class="authorization">
+          <li><a class="sign-in" href="#">Войти</a></li>
+          <li><a class="sign-up" href="#">Регистрация</a></li>
+        </ul>
+        <ul class="personal-account">
+          <li><a class="profile" href="#">Равшан Джамшутович</a></li>
+          <li><a class="my-orders" href="#">Мои заказы</a></li>
+          <li><a class="profile-page" href="#">Личный кабинет</a></li>
+        </ul>
+      </div>
+      <nav class="container nav-main">
+        <ul class="list-nav-main">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="container reserve-write-us">
       <h2>Запасная форма</h2>
       <a href="index.html">Назад</a>
     </section>
+    <footer class="footer">
+      <div class="container nav-footer">
+        <a href="index.html" class="logo-footer">
+          <img class="visually-hidden" src="img/logo-footer-basic.svg" alt="Логотип" width="220" height="68">
+        </a>
+        <ul class="nav-footer-first">
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <p class="address-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+        <ul class="nav-footer-second">
+          <li><a href="#">Материалы</a></li>
+          <li><a href="#">Техника</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+        </ul>
+      </div>
+      <div class="background-footer">
+        <div class="container developers-and-social-networks">
+          <p class="copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
+          <ul class="social-networks">
+            <li><a class="icon-social icon-vk" href="#" aria-label="Ссылка на Вконтакте"></a></li>
+            <li><a class="icon-social icon-fb" href="#" aria-label="Ссылка на Фейсбук"></a></li>
+            <li><a class="icon-social icon-insta" href="#" aria-label="Ссылка на Инстаграм"></a></li>
+          </ul>
+          <p class="feedback">Обратная связь: <a href="mailto:mail@htmlacademy.ru" class="mail">mail@htmlacademy.ru</a></p>
+          <p class="site-developer">Разработано — <a href="htmlacademy.ru" class="developers-site">htmlacademy.ru</a></p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

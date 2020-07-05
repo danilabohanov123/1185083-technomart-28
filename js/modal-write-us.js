@@ -40,9 +40,9 @@ write_us_form.addEventListener("submit", function (evt) {
   console.log("sdfsdf");
   if (!login_email_field.value || !login_name_field.value || !message_text_field.value) {
     evt.preventDefault();
-    modal_write_us.classList.add("modal-error");
-    modal_write_us.offsetWidth = modal_write_us.offsetWidth;
     modal_write_us.classList.remove("modal-error");
+    modal_write_us.offsetWidth = modal_write_us.offsetWidth;
+    modal_write_us.classList.add("modal-error");
   } else {
     if (is_storage_support){
       localStorage.setItem("login-name", login_name_field.value);
