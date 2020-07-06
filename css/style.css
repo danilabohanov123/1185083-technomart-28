@@ -2658,3 +2658,31 @@ a {
 .close-message:active {
   color: var(--controls-border-hover);
 }
+
+.activity-indicators-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 70px;
+  left: 275;
+  bottom: 36px;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-indicators-list li {
+  width: 8px;
+  height: 8px;
+  background-color: var(--basic-background);
+  border: 2px solid var(--basic-background);
+  margin-right: 10px;
+}
+
+.activity-indicators-list li:last-child() {
+  margin-right: 0;
+}
+
+.activity-indicators-list .indicator-active {
+  background-color: var(--attention-grabbing);
+}

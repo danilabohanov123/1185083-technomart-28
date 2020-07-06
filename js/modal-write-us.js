@@ -1,63 +1,62 @@
-var write_us_link = document.querySelector(".write-us-link");
-var modal_write_us = document.querySelector(".modal-write-us");
-var modal_close_write_us = modal_write_us.querySelector(".modal-close-write-us");
-var write_us_form = modal_write_us.querySelector(".write-us-form");
-var login_email_field = modal_write_us.querySelector(".login-email-field");
-var login_name_field = modal_write_us.querySelector(".login-name-field");
-var message_text_field = modal_write_us.querySelector(".message-text-field");
+var writeUsLink = document.querySelector(".write-us-link");
+var modalWriteUs = document.querySelector(".modal-write-us");
+var modalCloseWriteUs = modal_write_us.querySelector(".modal-close-write-us");
+var writeUsForm = modal_write_us.querySelector(".write-us-form");
+var loginEmailField = modal_write_us.querySelector(".login-email-field");
+var loginNameField = modal_write_us.querySelector(".login-name-field");
+var messageTextField = modal_write_us.querySelector(".message-text-field");
 
-var is_storage_support = true;
-var storage_name = "";
-var storage_email = "";
+var isStorageSupport = true;
+var storageName = "";
+var storageEmail = "";
 
 try {
-  storage_name = localStorage.getItem("login-name");
-  storage_email = localStorage.getItem("login-email");
+  storageName = localStorage.getItem("login-name");
+  storageEmail = localStorage.getItem("login-email");
 } catch (err) {
-  is_storage_support = false;
+  isStorageSupport = false;
 }
 
-write_us_link.addEventListener("click", function (evt) {
+writeUsLink.addEventListener("click", function (evt) {
   evt.preventDefault();
-  modal_write_us.classList.add("modal-show");
+  modalWriteUs.classList.add("modal-show");
 
   if (storage_name) {
-    login_name_field.value = storage_name;
-    login_email_field.value = storage_email;
-    message_text_field.focus();
+    loginNameField.value = storageName;
+    loginEmailField.value = storageEmail;
+    messageTextField.focus();
   } else {
-    login_name_field.focus();
+    loginNameField.focus();
   }
 });
 
-modal_close_write_us.addEventListener("click", function (evt) {
+modalCloseWriteUs.addEventListener("click", function (evt) {
   evt.preventDefault();
-  modal_write_us.classList.remove("modal-show");
-  modal_write_us.classList.remove("modal-error");
+  modalWriteUs.classList.remove("modal-show");
+  modalWriteUs.classList.remove("modal-error");
 });
 
-write_us_form.addEventListener("submit", function (evt) {
+writeUsForm.addEventListener("submit", function (evt) {
   console.log("sdfsdf");
-  if (!login_email_field.value || !login_name_field.value || !message_text_field.value) {
+  if (!loginEmailField.value || !loginNameField.value || !messageTextField.value) {
     evt.preventDefault();
-    modal_write_us.classList.remove("modal-error");
-    modal_write_us.offsetWidth = modal_write_us.offsetWidth;
-    modal_write_us.classList.add("modal-error");
+    modalWriteUs.classList.remove("modal-error");
+    modalWriteUs.offsetWidth = modalWriteUs.offsetWidth;
+    modalWriteUs.classList.add("modal-error");
   } else {
     if (is_storage_support){
-      localStorage.setItem("login-name", login_name_field.value);
-      localStorage.setItem("login-email", login_email_field.value);
-      localStorage.setItem("message-text", "");
+      localStorage.setItem("login-name", loginNameField.value);
+      localStorage.setItem("login-email", loginEmailField.value);
     }
   }
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (modal_write_us.classList.contains("modal-show")) {
+    if (modalWriteUs.classList.contains("modal-show")) {
       evt.preventDefault();
-      modal_write_us.classList.remove("modal-show");
-      modal_write_us.classList.remove("modal-error");
+      modalWriteUs.classList.remove("modal-show");
+      modalWriteUs.classList.remove("modal-error");
     }
   }
 });

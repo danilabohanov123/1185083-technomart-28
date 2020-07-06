@@ -1,20 +1,22 @@
-var cartCounter = 0;
-var addToCartElements = document.getElementsByClassNamer('.add-to-cart');
+var cartCounter = 10;
+var addToCartСollection = document.querySelectorAll('.add-to-cart');
 var cart = document.querySelector('.cart');
 var modalAddedToCart = document.querySelector('.modal-added-to-cart');
 var modalCloseMessage = modalAddedToCart.querySelector('.modal-close-message');
 var closeMessage = modalAddedToCart.querySelector('.close-message');
 
-addToCartCartElements.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  console.log(cartCounter);
-  cartCounter += 1;
-  if (cartCounter == 1) {
-    cart.classList.add('cart-login');
-  }
-  cart.textContent = 'Корзина ' + cartCounter;
-  modalAddedToCart.classList.add('modal-show');
-});
+for (addToCartElement of addToCartСollection){
+  addToCartElement.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    console.log(cartCounter);
+    cartCounter += 1;
+    if (cartCounter == 1) {
+      cart.classList.add('cart-login');
+    }
+    cart.textContent = 'Корзина ' + cartCounter;
+    modalAddedToCart.classList.add('modal-show');
+  });
+}
 
 modalCloseMessage.addEventListener('click', function (evt) {
   evt.preventDefault();

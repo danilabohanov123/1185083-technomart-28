@@ -1,20 +1,20 @@
-let slide_perforators = document.querySelector('.slide-perforators');
-let slide_drills = document.querySelector('.slide-drills');
-let control_left = document.querySelector('.control-left');
-let control_right = document.querySelector('.control-right');
+let slidePerforators = document.querySelector('.slide-perforators');
+let slideDrills = document.querySelector('.slide-drills');
+let controlLeft = document.querySelector('.control-left');
+let controlRight = document.querySelector('.control-right');
 
-control_left.addEventListener("click", function (evt) {
+controlLeft.addEventListener("click", function (evt) {
   evt.preventDefault();
-  slide_perforators.classList.toggle('slide');
-  slide_perforators.classList.toggle('topics-slide-current');
-  slide_drills.classList.toggle('slide');
-  slide_drills.classList.toggle('topics-slide-current');
+  slidePerforators.classList.toggle('slide');
+  slidePerforators.classList.toggle('topics-slide-current');
+  slideDrills.classList.toggle('slide');
+  slideDrills.classList.toggle('topics-slide-current');
 });
 
-control_right.addEventListener("click", function (evt) {
+controlRight.addEventListener("click", function (evt) {
   evt.preventDefault();
-  slide_perforators.classList.toggle('slide');
-  slide_perforators.classList.toggle('topics-slide-current');
-  slide_drills.classList.toggle('slide');
-  slide_drills.classList.toggle('topics-slide-current');
+  slidePerforators.classList.toggle('slide');
+  slidePerforators.classList.toggle('topics-slide-current');
+  slideDrills.classList.toggle('slide');
+  slideDrills.classList.toggle('topics-slide-current');
 });
