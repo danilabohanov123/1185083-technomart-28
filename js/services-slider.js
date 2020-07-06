@@ -5,11 +5,11 @@ var servicesControlDelivery = document.querySelector('.delivery-control');
 var servicesControlGuarantee = document.querySelector('.guarantee-control');
 var servicesControlCredit = document.querySelector('.credit-control');
 
-servicesControlDelivery.addEventListener("click", function (evt) {
+servicesControlDelivery.addEventListener('click', function (evt) {
   evt.preventDefault();
   servicesSlideGuarantee.classList.remove('slide-current');
   servicesSlideCredit.classList.remove('slide-current');
-  servicesSlideguarantee.classList.add('slide');
+  servicesSlideGuarantee.classList.add('slide');
   servicesSlideCredit.classList.add('slide');
   servicesSlideDelivery.classList.remove('slide');
   servicesSlideDelivery.classList.add('slide-current');
@@ -19,7 +19,7 @@ servicesControlDelivery.addEventListener("click", function (evt) {
   servicesControlDelivery.classList.add('services-control-current');
 });
 
-servicesControlGuarantee.addEventListener("click", function (evt) {
+servicesControlGuarantee.addEventListener('click', function (evt) {
   evt.preventDefault();
   servicesSlideDelivery.classList.remove('slide-current');
   servicesSlideCredit.classList.remove('slide-current');
@@ -33,7 +33,7 @@ servicesControlGuarantee.addEventListener("click", function (evt) {
   servicesControlGuarantee.classList.add('services-control-current');
 });
 
-servicesControlCredit.addEventListener("click", function (evt) {
+servicesControlCredit.addEventListener('click', function (evt) {
   evt.preventDefault();
   servicesSlideDelivery.classList.remove('slide-current');
   servicesSlideGuarantee.classList.remove('slide-current');

@@ -1,22 +1,22 @@
-var navigationMapLink = document.querySelector(".navigation-map");
-var modalMap = document.querySelector(".modal-map");
-var modalCloseMap = modal_map.querySelector(".modal-close-map");
+var navigationMapLink = document.querySelector('.navigation-map');
+var modalMap = document.querySelector('.modal-map');
+var modalCloseMap = modalMap.querySelector('.modal-close-map');
 
-navigationMapLink.addEventListener("click", function(evt) {
+navigationMapLink.addEventListener('click', function(evt) {
   evt.preventDefault();
-  modalMap.classList.add("modal-show");
+  modalMap.classList.add('modal-show');
 });
 
-modalCloseMap.addEventListener("click", function(evt) {
+modalCloseMap.addEventListener('click', function(evt) {
   evt.preventDefault();
-  modalMap.classList.remove("modal-show");
+  modalMap.classList.remove('modal-show');
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (modalMap.classList.contains("modal-show")) {
+    if (modalMap.classList.contains('modal-show')) {
       evt.preventDefault();
-      modalMap.classList.remove("modal-show");
+      modalMap.classList.remove('modal-show');
     }
   }
 });
