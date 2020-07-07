@@ -21,7 +21,7 @@ writeUsLink.addEventListener('click', function (evt) {
   evt.preventDefault();
   modalWriteUs.classList.add('modal-show');
 
-  if (storage_name) {
+  if (StorageName) {
     loginNameField.value = storageName;
     loginEmailField.value = storageEmail;
     messageTextField.focus();
@@ -43,7 +43,7 @@ writeUsForm.addEventListener('submit', function (evt) {
     modalWriteUs.offsetWidth = modalWriteUs.offsetWidth;
     modalWriteUs.classList.add('modal-error');
   } else {
-    if (is_storage_support) {
+    if (isStorageSupport) {
       localStorage.setItem('login-name', loginNameField.value);
       localStorage.setItem('login-email', loginEmailField.value);
     }
