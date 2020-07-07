@@ -43,7 +43,7 @@ writeUsForm.addEventListener('submit', function (evt) {
     modalWriteUs.offsetWidth = modalWriteUs.offsetWidth;
     modalWriteUs.classList.add('modal-error');
   } else {
-    if (is_storage_support){
+    if (is_storage_support) {
       localStorage.setItem('login-name', loginNameField.value);
       localStorage.setItem('login-email', loginEmailField.value);
     }
